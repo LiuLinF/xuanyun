@@ -1,0 +1,33 @@
+.container-full>div{
+	width:1500px;
+	position:relative;
+}
+.container-full>div>div:nth-child(2){
+	margin-left: 300px;
+}
+.container-full>div>div:last-child{
+	margin-left: 150px;
+}
+.container-full>div>div:nth-child(2)>div{
+	position:absolute;
+	top:50px;
+	right:353px;
+	background-color:#282828;
+	display:none;
+}
+.header_style>div:nth-child(3) a.btn{
+    background-color: #ff9f00;
+    border-radius:1rem;
+    border: 0;
+    outline: 0;
+}
+.header_style>div:nth-child(2) li:hover{
+    background-color:#282828;
+}
+.header_style>div:nth-child(2) li a,.header_style>div:nth-child(3)>a{
+    color: #1c1c1c;
+}
+.header_style>div:nth-child(2) li:hover a,.header_style>div:nth-child(3)>a:hover{
+    color:#fd7e14;
+    text-decoration: none;
+}

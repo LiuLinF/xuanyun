@@ -1,0 +1,22 @@
+body{
+    width: 100%;
+}
+.login_bg{
+    width: 100%;
+    height: 33rem;
+    background:url("../img/login/login_bj_03.jpg") no-repeat;
+}
+.login_btn{
+    background-color: #fff;
+    border-radius: 0%;
+    color: #000;
+}
+.login_btn:hover{
+    background-color: red;
+    color: #fff;
+}
+.login_bg>div.w-25{
+    position: relative;
+    top:20%;
+    left: 35%;
+}

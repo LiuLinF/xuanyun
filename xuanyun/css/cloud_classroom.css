@@ -1,0 +1,164 @@
+.carousel-indicators li{
+	width:40px;
+	height: 5px;
+	margin:0 10px;
+}
+.carousel-indicators li:hover{
+	cursor: pointer;
+}
+.carousel-indicators .active{
+	background-color: #000;
+}
+.excellent_course{
+	width:100%;
+	box-sizing:border-box;
+	padding:0 10px;
+}
+.course{
+	width:100%;
+	margin-top:50px;
+}
+.course span{
+	font-size: 26px;
+	color:rgb(82,82,82);
+	font-weight: bold;
+}
+.course a{
+	float: right;
+	color:rgb(135,135,135);
+	font-size: 14px;
+}
+.excellent_course>div{
+	width:1500px;
+}
+.excellent_course>div>div{
+	float: left;
+	position: relative;
+	width:357px;
+	height: 410px;
+	box-sizing:border-box;
+	margin-right:24px;
+	margin-bottom:20px;
+}
+.excellent_course>div>div:nth-child(4),
+.excellent_course>div>div:nth-child(8),
+.excellent_course>div>div:nth-child(12),
+.excellent_course>div>div:nth-child(16){
+	margin-right:0;
+}
+.excellent_course>div>div:hover{
+	box-shadow:0px 0px 10px #e0d8d8;
+}
+.excellent_course>div>div>div>a img{
+	width:100%;
+}
+.excellent_course>div>div>div>span img{
+	position: absolute;
+	top:0px;
+	left:288px;
+}
+.card_text_wrap{
+	position: relative;
+	background-color: #fff;
+}
+.excellent_course>div .card_text_wrap>a{
+	display: block;
+	font-size: 18px;
+	color: rgb(74, 74, 74);
+	box-sizing: border-box;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left:20px;
+}
+.excellent_course>div .card_text_wrap>a:hover{
+	text-decoration: none;
+	color:#fd7e14;
+}
+.card_text_wrap>p,
+.card_text_wrap>div>span{
+	font-size: 14px;
+	color: rgb(154, 154, 154);
+	margin-left:20px;
+}
+.card_text_wrap>p+p>span{
+	color:#000;
+}
+.card_text_wrap>p+p>span:last-child{
+	float: right;
+	font-size: 20px;
+	color: rgb(82, 144, 103);
+	position: absolute;
+	top:74px;
+	left:300px;
+}
+.card_text_wrap>div{
+	border-top:1px solid #eee;
+}
+.card_text_wrap>div>span{
+	display: inline-block;
+	margin-top:5px;
+	margin-bottom:15px;
+}
+.stu_eval_title {
+	float: left;
+	height: 94px;
+	color: #525252;
+	font-size: 26px;
+	font-weight: bold;
+	padding-top: 48px;
+	position: relative;
+	width: 1500px;
+	left: 50%;
+	margin-left: -750px;
+	padding-left: 8px;
+	background-color: #fff;
+}
+.evaluation{
+	float: left;
+	width:100%;
+	background-color: #fff;
+}
+.evaluation>div{
+	width: 285px;
+	height: 430px;
+	background: #f5f5f5;
+	float: left;
+	margin-left: 8px;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 50px;
+}
+.evaluation>div>div:first-child{
+	box-sizing: border-box;
+	margin-top: 25px;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 2px solid #d2d2d2;
+	display: inline-block;
+	overflow: hidden;
+	background-image: url(../img/index/cloud_classroom/stu_img4.png);
+	background-size:100%;
+}
+.evaluation>div>div{
+	position: relative;
+	box-sizing: border-box;
+}
+.evaluation>div>div>div{
+	position: absolute;
+	color:#fffc01;
+	font-size: 17px;
+	font-weight: bold;
+	top:27px;
+	left:9px;
+}
+.evaluation>div>div:last-child{
+	width: 100%;
+	font:16px "Microsoft YaHei", "微软雅黑";
+	line-height: 25px;
+	color: #616161;
+	box-sizing: border-box;
+	padding: 25px 16px;
+	overflow: hidden;
+	text-align: left;
+}
