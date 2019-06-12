@@ -14,6 +14,10 @@
 	box-sizing:border-box;
 	padding:0 10px;
 }
+.excellent_course>div,.course>div{
+	width:1500px;
+	margin:0 auto;
+}
 .course{
 	width:100%;
 	margin-top:50px;
@@ -30,6 +34,11 @@
 }
 .excellent_course>div{
 	width:1500px;
+}
+.excellent_course:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 .excellent_course>div>div{
 	float: left;
@@ -88,7 +97,7 @@
 	font-size: 20px;
 	color: rgb(82, 144, 103);
 	position: absolute;
-	top:74px;
+	top:55px;
 	left:300px;
 }
 .card_text_wrap>div{
@@ -99,7 +108,17 @@
 	margin-top:5px;
 	margin-bottom:15px;
 }
-.stu_eval_title {
+.stu_eval_title:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.stu_eval_title{
+	width:100%;
+	background-color: #fff;
+}
+
+.stu_eval_title>div{
 	float: left;
 	height: 94px;
 	color: #525252;
@@ -111,7 +130,6 @@
 	left: 50%;
 	margin-left: -750px;
 	padding-left: 8px;
-	background-color: #fff;
 }
 .evaluation{
 	float: left;
@@ -119,6 +137,10 @@
 	background-color: #fff;
 }
 .evaluation>div{
+	width:1515px;
+	margin:0 auto;
+}
+.evaluation>div>div{
 	width: 285px;
 	height: 430px;
 	background: #f5f5f5;
@@ -128,7 +150,7 @@
 	margin-right: 10px;
 	margin-bottom: 50px;
 }
-.evaluation>div>div:first-child{
+.evaluation>div>div>div:first-child{
 	box-sizing: border-box;
 	margin-top: 25px;
 	width: 130px;
@@ -140,11 +162,11 @@
 	background-image: url(../img/index/cloud_classroom/stu_img4.png);
 	background-size:100%;
 }
-.evaluation>div>div{
+.evaluation>div>div>div{
 	position: relative;
 	box-sizing: border-box;
 }
-.evaluation>div>div>div{
+.evaluation>div>div>div>div{
 	position: absolute;
 	color:#fffc01;
 	font-size: 17px;
@@ -152,7 +174,7 @@
 	top:27px;
 	left:9px;
 }
-.evaluation>div>div:last-child{
+.evaluation>>divdiv>div:last-child{
 	width: 100%;
 	font:16px "Microsoft YaHei", "微软雅黑";
 	line-height: 25px;
