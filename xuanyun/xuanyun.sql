@@ -3,6 +3,7 @@ drop database if exists xy;
 create database xy charset=utf8;
 use xy;
 #1.用户信息表（xy_user）
+
 create table xy_user(
 	uid int primary key not null auto_increment,
 	uname varchar(32),
@@ -14,11 +15,13 @@ create table xy_user(
 	render_type int
 );
 #2.模板类别表（xy_template_family）
+
 create table xy_template_family(
 	fid int primary key auto_increment,
 	fname varchar(32)
 );
 #3.模板表（xy_template）
+
 create table xy_template(
 	lid int primary key auto_increment,
 	product_id int,
@@ -33,6 +36,7 @@ create table xy_template(
 	is_onsale boolean
 );
 #4.商品详情图表 （xy_template_pic）
+
 create table xy_template_pic(
 	pid int primary key auto_increment,
 	product_id int,
@@ -45,6 +49,7 @@ create table xy_template_pic(
 	details VARCHAR(1024)
 );
 #5.轮播图表 （xy_carousel）
+
 create table xy_carousel(
 	cid int primary key auto_increment,
 	c_img varchar(128),
@@ -52,7 +57,8 @@ create table xy_carousel(
 	img_href varchar(128)
 );
 #6.首页商品栏目表 （xy_index_product）
-create table xy_index_product(
+
+create table xy_index_product_vip(
 	sid int primary key auto_increment,
 	s_title varchar(64),
 	s_details varchar(128),
