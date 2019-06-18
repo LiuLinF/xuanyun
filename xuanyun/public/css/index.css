@@ -9,3 +9,50 @@
 .carousel-indicators .active{
     background-color: #fff;
 }
+nav{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #fff;
+}
+nav li{
+	float: left;
+	list-style: none;
+	
+}
+nav>ul:first-child{
+	width: 1260px;
+	height: 70px;
+	line-height: 70px;
+	margin: 0 auto;
+	/* border-bottom:1px solid gray;  */
+}
+nav>ul li a{
+	display: inline-block;
+	width: 105px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #4e4e4e;
+	box-sizing: border-box;
+}
+nav li a:hover{
+	text-decoration: none;
+	color: #ff9f00;
+}
+nav li img{
+	padding-right:10px;
+}
+nav>ul:last-child{
+	width: 420px;
+	height: 65px;
+	line-height: 65px;
+	margin: 0 auto;
+}
+nav .active{
+	border-bottom: 2px solid  orange;
+}
+nav>ul:first-child li:last-child{
+	border-radius: 5px 5px;
+	background-color: #000;
+}

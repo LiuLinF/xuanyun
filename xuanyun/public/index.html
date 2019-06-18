@@ -86,10 +86,57 @@
             </ul>
         </div>
     </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <span><img src="img/index/vip_item_banner_logo.png" alt=""></span>
+                    VIP模板</a>
+            </li>
+            <li>
+                <a href="#">
+                    <span><img src="img/index/vip_item_banner_logo.png" alt=""></span>
+                    VIP模板</a>
+            </li>
+            <li><a href="#">VIP模板</a></li>
+            <li><a href="#">VIP模板</a></li>
+            <li><a href="#">VIP模板</a></li>
+            <li><a href="#">VIP模板</a></li>
+            <li><a href="#">VIP模板</a></li>
+            <li><a href="#">VIP模板</a></li>
+            <li><a href="#">VIP模板</a></li>
+            <li><a href="#">VIP模板</a></li>
+            <li>
+                <a href="#">
+                    <span><img src="img/index/vip_item_banner_logo.png" alt=""></span>
+                    VIP模板</a>
+            </li>
+            <li>
+                <a href="#">
+                    <span><img src="img/index/vip_item_banner_logo.png" alt=""></span>
+                    VIP模板</a>
+            </li>
+        </ul>
+        <hr style="margin: 0">
+        <ul>
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#">最新</a></li>
+            <li><a href="#">推荐</a></li>
+            <li><a href="#">最热</a></li>
+        </ul>
+    </nav>
     <!--底部-->
     <footer>
         <iframe class="my_footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
     </footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $("nav>ul:last").on("click","li",function(e){
+            e.preventDefault();
+            $("nav>ul:last").children().removeClass("active");
+            $(this).addClass("active");
+        })
+    </script>
 </body>
 
 </html>
