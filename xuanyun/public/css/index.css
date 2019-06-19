@@ -14,20 +14,24 @@ nav{
 	text-align: center;
 	margin: 0 auto;
 	background-color: #fff;
+	box-shadow: 0px 0px 4px -1px gray;
+	box-sizing: border-box;
 }
-nav li{
+nav li,.index_vip>ul>li{
 	float: left;
 	list-style: none;
+	box-sizing: border-box;
 	
 }
 nav>ul:first-child{
-	width: 1260px;
+	width: 1300px;
 	height: 70px;
 	line-height: 70px;
 	margin: 0 auto;
+	box-sizing: border-box;
 	/* border-bottom:1px solid gray;  */
 }
-nav>ul li a{
+nav>ul li a, .index_vip>ul:first-child a{
 	display: inline-block;
 	width: 105px;
 	height: 30px;
@@ -36,7 +40,7 @@ nav>ul li a{
 	color: #4e4e4e;
 	box-sizing: border-box;
 }
-nav li a:hover{
+nav li a:hover, .index_vip>ul:first-child a:hover{
 	text-decoration: none;
 	color: #ff9f00;
 }
@@ -46,13 +50,70 @@ nav li img{
 nav>ul:last-child{
 	width: 420px;
 	height: 65px;
-	line-height: 65px;
+	line-height: 60px;
 	margin: 0 auto;
+	box-sizing: border-box;
+}
+nav>ul:last-child>li{
+	box-sizing: border-box;
 }
 nav .active{
-	border-bottom: 2px solid  orange;
+	border-bottom: 5px solid  orange;
 }
-nav>ul:first-child li:last-child{
-	border-radius: 5px 5px;
-	background-color: #000;
+nav>ul:first-child li:last-child a,nav>ul:first-child li:nth-child(11) a{
+	border-radius:14px;
+	background-color: #e7e7e7;
+	height: 30px;
+	line-height: 30px;
+	margin-right:20px; 
+}
+.index_vip{
+	width: 100%;
+	text-align: center;
+	margin-top:50px;
+}
+.index_vip>ul{
+	width: 1500px;
+	margin: 0 auto;
+	margin-bottom:30px;
+}
+.index_vip>ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.index_vip>ul:first-child>li a{
+	width: 85px;
+	text-align: right;
+}
+.index_vip>ul:first-child>li:first-child a{
+	color: #333;
+	font-size: 24px;
+}
+.index_vip>ul:first-child>li:first-child a:hover{
+	color: gray;
+}
+.index_vip>ul:first-child>li:last-child{
+	float: right;
+}
+.index_vip>ul:last-child>li>div{
+	width: 352px;
+	height: 356px;
+}
+.index_vip>ul:last-child>li>div>div{
+	margin: 15px;
+	text-align: left;
+}
+.index_vip>ul:last-child>li>div>div>a span{
+	margin-left:20px; 
+}
+.index_vip>ul:last-child>li>div>div>a:last-child{
+	font-size: 14px;
+    color: #ff7f2c;
+    float: right;
+    line-height: 44px;
+}
+.index_vip .user_pic{
+	width: 42px;
+	border-radius: 50%;
 }
