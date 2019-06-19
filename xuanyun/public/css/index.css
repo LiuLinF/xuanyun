@@ -40,7 +40,7 @@ nav>ul li a, .index_vip>ul:first-child a{
 	color: #4e4e4e;
 	box-sizing: border-box;
 }
-nav li a:hover, .index_vip>ul:first-child a:hover{
+a:hover{
 	text-decoration: none;
 	color: #ff9f00;
 }
@@ -75,7 +75,6 @@ nav>ul:first-child li:last-child a,nav>ul:first-child li:nth-child(11) a{
 .index_vip>ul{
 	width: 1500px;
 	margin: 0 auto;
-	margin-bottom:30px;
 }
 .index_vip>ul:after{
 	content: "";
@@ -99,19 +98,30 @@ nav>ul:first-child li:last-child a,nav>ul:first-child li:nth-child(11) a{
 .index_vip>ul:last-child>li>div{
 	width: 352px;
 	height: 356px;
+	background-color: #fff;
+	float: left;
+	margin:30px 24px 0 0;
+	box-sizing: border-box;
+}
+.index_vip>ul:last-child>li>div:nth-child(4),
+.index_vip>ul:last-child>li>div:nth-child(8){
+	margin-right: 0;
+}
+.index_vip>ul:last-child>li>div:hover{
+	box-shadow: 1px 1px 10px -1px gray;
 }
 .index_vip>ul:last-child>li>div>div{
-	margin: 15px;
+	margin: 25px;
 	text-align: left;
 }
 .index_vip>ul:last-child>li>div>div>a span{
 	margin-left:20px; 
 }
 .index_vip>ul:last-child>li>div>div>a:last-child{
-	font-size: 14px;
+	font-size: 18px;
     color: #ff7f2c;
     float: right;
-    line-height: 44px;
+    line-height: 35px;
 }
 .index_vip .user_pic{
 	width: 42px;
