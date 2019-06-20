@@ -59,10 +59,10 @@ create table xy_template_pic(
 );
 #商品详情图表 （xy_template_pic） 插入数据
 insert into xy_template_pic values
-	(1,"北欧客餐厅全景模型","ID：M0000154542","版权所属 :  炫我科技","2019-06-14 09:00:03","public/img/index/commodity_details/1.jpg",10,12,13,"mm4521","public/img/index/product_vip/user_pic/getHeader.png",99,"暂无"),
-	(null,"现代客餐厅全景模型","ID：M00001536391","版权所属 :  炫我科技","2019-06-12 09:00:17","public/img/index/	commodity_details/1.jpg",107,14,13,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png",999,"暂无"),
-	(null,"现代卧室全景模型","ID：M0000154591","版权所属 :  炫我科技","2019-06-15 09:00:34","public/img/index/commodity_details/1.jpg",107,14,13,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png",999,"暂无"),
-	(null,"现代轻奢客厅餐厅模型","ID：M0000154457","版权所属 :  炫我科技","2019-06-13 15:15:17","public/img/index/commodity_details/1.jpg",107,14,13,"蒙流纯牛奶","public/img/index/product_vip/user_pic/SIVANT.png",999,"暂无");
+	(1,"北欧客餐厅全景模型","ID：M0000154542","版权所属 :  炫我科技","2019-06-14 09:00:03","img/index/commodity_details/1.jpg",10,12,13,"mm4521","img/index/product_vip/user_pic/getHeader.png",99,"暂无"),
+	(null,"现代客餐厅全景模型","ID：M00001536391","版权所属 :  炫我科技","2019-06-12 09:00:17","img/index/	commodity_details/1.jpg",107,14,13,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png",999,"暂无"),
+	(null,"现代卧室全景模型","ID：M0000154591","版权所属 :  炫我科技","2019-06-15 09:00:34","img/index/commodity_details/1.jpg",107,14,13,"SIVANT","img/index/product_vip/user_pic/SIVANT.png",999,"暂无"),
+	(null,"现代轻奢客厅餐厅模型","ID：M0000154457","版权所属 :  炫我科技","2019-06-13 15:15:17","img/index/commodity_details/1.jpg",107,14,13,"蒙流纯牛奶","img/index/product_vip/user_pic/SIVANT.png",999,"暂无");
 
 #4.轮播图表 （xy_carousel）
 create table xy_carousel(
@@ -72,12 +72,12 @@ create table xy_carousel(
 );
 #轮播图表 （xy_carousel） 插入数据
 insert into xy_carousel values
-	(1,"public/img/index/carousel/1.jpg","合作伙伴持续征集中"),
-	(null,"public/img/index/carousel/2.jpg","云模型VIP"),
-	(null,"public/img/index/carousel/3.jpg","北欧客餐厅全景模型"),
-	(null,"public/img/index/carousel/4.jpg","现代沙发组合模型"),
-	(null,"public/img/index/carousel/5.jpg","中式园林规划模型"),
-	(null,"public/img/index/carousel/6.jpg","现代客餐厅全景模型");
+	(1,"img/index/carousel/1.jpg","合作伙伴持续征集中"),
+	(null,"img/index/carousel/2.jpg","云模型VIP"),
+	(null,"img/index/carousel/3.jpg","北欧客餐厅全景模型"),
+	(null,"img/index/carousel/4.jpg","现代沙发组合模型"),
+	(null,"img/index/carousel/5.jpg","中式园林规划模型"),
+	(null,"img/index/carousel/6.jpg","现代客餐厅全景模型");
 
 #5.首页商品栏目表_VIP （xy_index_product_vip）
 create table xy_index_product_vip(
@@ -86,18 +86,19 @@ create table xy_index_product_vip(
 	user_pic varchar(128),  #用户头像
 	product_pic varchar(128),  #商品图片
 	cardPrice varchar(128),   #会员卡价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_VIP 插入数据
 insert into xy_index_product_vip values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg","VIP",1),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg","VIP",1),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg","VIP",1),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg","VIP",1),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg","VIP",1),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg","VIP",1),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg","VIP",1),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg","VIP",1);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg","VIP",1,1),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","VIP",2,1),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg","VIP",3,1),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg","VIP",4,1),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg","VIP",5,1),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","VIP",6,1),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg","VIP",7,1),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg","VIP",8,1);
 
 #6.首页商品栏目表_收费 （xy_index_product_charge）
 create table xy_index_product_charge(
@@ -107,18 +108,19 @@ create table xy_index_product_charge(
 	product_pic varchar(128),  #商品图片
 	Price_img varchar(128),   #价格图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_收费 插入数据
 insert into xy_index_product_charge values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",2),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",2),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",2),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",2),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",2),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",2),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",2),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",2);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg","img/index/product_vip/product_pic/jindou.png","2.8",1,2),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","img/index/product_vip/product_pic/jindou.png","2.8",2,2),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg","img/index/product_vip/product_pic/jindou.png","2.8",3,2),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg","img/index/product_vip/product_pic/jindou.png","2.8",4,2),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg","img/index/product_vip/product_pic/jindou.png","2.8",5,2),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","img/index/product_vip/product_pic/jindou.png","2.8",6,2),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg","img/index/product_vip/product_pic/jindou.png","2.8",7,2),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg","img/index/product_vip/product_pic/jindou.png","2.8",8,2);
 
 #7.首页商品栏目表_免费 （xy_index_productFree）
 create table xy_index_productFree(
@@ -127,18 +129,19 @@ create table xy_index_productFree(
 	user_pic varchar(128),  #用户头像
 	product_pic varchar(128),  #商品图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_免费 插入数据
 insert into xy_index_productFree values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg","免费",3),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg","免费",3),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg","免费",3),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg","免费",3),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg","免费",3),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg","免费",3),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg","免费",3),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg","免费",3);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg","免费",1,3),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","免费",2,3),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg","免费",3,3),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg","免费",4,3),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg","免费",5,3),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","免费",6,3),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg","免费",7,3),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg","免费",8,3);
 
 #8.首页商品栏目表_别墅 （xy_index_product_villa）
 create table xy_index_product_villa(
@@ -148,18 +151,19 @@ create table xy_index_product_villa(
 	product_pic varchar(128),  #商品图片
 	Price_img varchar(128),   #价格图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_别墅 插入数据
 insert into xy_index_product_villa values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg",null,"VIP",4),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg",null,"VIP",4),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg",null,"VIP",4),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",4),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg",null,"VIP",4),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg",null,"VIP",4),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",4);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg",null,"VIP",1,4),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg",null,"VIP",2,4),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg",null,"VIP",3,4),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,4),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg","img/index/product_vip/product_pic/jindou.png","2.8",5,4),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg",null,"VIP",6,4),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg",null,"VIP",7,4),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg","img/index/product_vip/product_pic/jindou.png","2.8",8,4);
 
 #9.首页商品栏目表_单体模型 （xy_index_monomer_model）
 create table xy_index_monomer_model(
@@ -169,18 +173,19 @@ create table xy_index_monomer_model(
 	product_pic varchar(128),  #商品图片
 	Price_img varchar(128),   #价格图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_单体模型 插入数据
 insert into xy_index_monomer_model values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg",null,"VIP",5),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg",null,"VIP",5),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg",null,"VIP",5),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",5),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg",null,"VIP",5),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg",null,"VIP",5),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg",null,"VIP",5);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg",null,"VIP",1,5),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg",null,"VIP",2,5),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg",null,"VIP",3,5),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,5),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,5),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg",null,"VIP",6,5),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg",null,"VIP",7,5),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg",null,"VIP",8,5);
 
 #10.首页商品栏目表_酒店餐饮 （xy_index_catering ）
 create table xy_index_catering(
@@ -190,18 +195,19 @@ create table xy_index_catering(
 	product_pic varchar(128),  #商品图片
 	Price_img varchar(128),   #价格图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_酒店餐饮 插入数据
 insert into xy_index_catering values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg",null,"VIP",6),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",6),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg",null,"VIP",6),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",6),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",6),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg","public/img/index/product_vip/product_pic/jindou.png",6,6),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg",null,"VIP",6),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg",null,"VIP",6);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg",null,"VIP",1,6),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","img/index/product_vip/product_pic/jindou.png","2.8",2,6),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg",null,"VIP",3,6),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,6),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,6),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","img/index/product_vip/product_pic/jindou.png",6,6,6),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg",null,"VIP",7,6),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg",null,"VIP",8,6);
 
 #11.首页商品栏目表_商业空间 （xy_index_commercial_space ）
 create table xy_index_commercial_space(
@@ -211,18 +217,19 @@ create table xy_index_commercial_space(
 	product_pic varchar(128),  #商品图片
 	Price_img varchar(128),   #价格图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_商业空间 插入数据
 insert into xy_index_commercial_space values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",7),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",7),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",7),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",7),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",7),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg","public/img/index/product_vip/product_pic/jindou.png",6,7),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg",null,"VIP",7),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg",null,"VIP",7);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg","img/index/product_vip/product_pic/jindou.png","2.8",1,7),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","img/index/product_vip/product_pic/jindou.png","2.8",2,7),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg","img/index/product_vip/product_pic/jindou.png","2.8",3,7),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,7),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,7),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","img/index/product_vip/product_pic/jindou.png",6,6,7),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg",null,"VIP",7,7),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg",null,"VIP",8,7);
 
 #12.首页商品栏目表_公共空间 （xy_index_public_space ）
 create table xy_index_public_space(
@@ -232,18 +239,19 @@ create table xy_index_public_space(
 	product_pic varchar(128),  #商品图片
 	Price_img varchar(128),   #价格图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_公共空间 插入数据
 insert into xy_index_public_space values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg",null,"VIP",8),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",8),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",8),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",8),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",8),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg","public/img/index/product_vip/product_pic/jindou.png",6,8),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",8),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",8);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg",null,"VIP",1,8),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","img/index/product_vip/product_pic/jindou.png","2.8",2,8),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg","img/index/product_vip/product_pic/jindou.png","2.8",3,8),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,8),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,8),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","img/index/product_vip/product_pic/jindou.png",6,6,8),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg","img/index/product_vip/product_pic/jindou.png","2.8",7,8),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg","img/index/product_vip/product_pic/jindou.png","2.8",8,8);
 
 #13.首页商品栏目表_公共空间 （xy_index_office_space ）
 create table xy_index_office_space(
@@ -253,18 +261,19 @@ create table xy_index_office_space(
 	product_pic varchar(128),  #商品图片
 	Price_img varchar(128),   #价格图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_公共空间 插入数据
 insert into xy_index_office_space values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg",null,"VIP",9),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",9),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",9),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",9),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",9),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg","public/img/index/product_vip/product_pic/jindou.png",6,9),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",9),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",9);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg",null,"VIP",1,9),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","img/index/product_vip/product_pic/jindou.png","2.8",2,9),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg","img/index/product_vip/product_pic/jindou.png","2.8",3,9),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,9),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,9),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","img/index/product_vip/product_pic/jindou.png",6,6,9),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg","img/index/product_vip/product_pic/jindou.png","2.8",7,9),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg","img/index/product_vip/product_pic/jindou.png","2.8",8,9);
 
 #14.首页商品栏目表_休闲娱乐 （xy_index_leisure ）
 create table xy_index_leisure(
@@ -274,18 +283,19 @@ create table xy_index_leisure(
 	product_pic varchar(128),  #商品图片
 	Price_img varchar(128),   #价格图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_休闲娱乐 插入数据
 insert into xy_index_leisure values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg",null,"VIP",10),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",10),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",10),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",10),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",10),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg","public/img/index/product_vip/product_pic/jindou.png",6,10),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",10),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",10);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg",null,"VIP",1,10),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","img/index/product_vip/product_pic/jindou.png","2.8",2,10),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg","img/index/product_vip/product_pic/jindou.png","2.8",3,10),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,10),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,10),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","img/index/product_vip/product_pic/jindou.png",6,6,10),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg","img/index/product_vip/product_pic/jindou.png","2.8",7,10),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg","img/index/product_vip/product_pic/jindou.png","2.8",8,10);
 
 #15.首页商品栏目表_室外建筑 （xy_index_outdoor_building ）
 create table xy_index_outdoor_building(
@@ -295,15 +305,16 @@ create table xy_index_outdoor_building(
 	product_pic varchar(128),  #商品图片
 	Price_img varchar(128),   #价格图片
 	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
 	fid int  #商品类型
 ); 
 #首页商品栏目表_公共空间 插入数据
 insert into xy_index_outdoor_building values
-(1,"mm4521","public/img/index/product_vip/user_pic/getHeader.png","public/img/index/product_vip/product_pic/vip1.jpg",null,"VIP",11),
-(null,"SIVANT","public/img/index/product_vip/user_pic/SIVANT.png","public/img/index/product_vip/product_pic/vip2.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",11),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip3.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",11),
-(null,"无霜","public/img/index/product_vip/user_pic/wushuang","public/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",11),
-(null,"柒上设计表现机构","public/img/index/product_vip/user_pic/ranshang.png","public/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",11),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip6.jpg","public/img/index/product_vip/product_pic/jindou.png",6,11),
-(null,"本末设计表现","public/img/index/product_vip/user_pic/benmo.png","public/img/index/product_vip/product_pic/vip7.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",11),
-(null,"T.R.Y空间设计工作室","public/img/index/product_vip/user_pic/TRY.png","public/img/index/product_vip/product_pic/vip8.jpg","public/img/index/product_vip/product_pic/jindou.png","2.8",11);
+(1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg",null,"VIP",1,11),
+(null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","img/index/product_vip/product_pic/jindou.png","2.8",2,11),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg","img/index/product_vip/product_pic/jindou.png","2.8",3,11),
+(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,11),
+(null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,11),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","img/index/product_vip/product_pic/jindou.png",6,6,11),
+(null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg","img/index/product_vip/product_pic/jindou.png","2.8",7,11),
+(null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg","img/index/product_vip/product_pic/jindou.png","2.8",8,11);
