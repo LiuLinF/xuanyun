@@ -94,7 +94,7 @@ insert into xy_index_product_vip values
 (1,"mm4521","img/index/product_vip/user_pic/getHeader.png","img/index/product_vip/product_pic/vip1.jpg","VIP",1,1),
 (null,"SIVANT","img/index/product_vip/user_pic/SIVANT.png","img/index/product_vip/product_pic/vip2.jpg","VIP",2,1),
 (null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip3.jpg","VIP",3,1),
-(null,"无霜","img/index/product_vip/user_pic/wushuang","img/index/product_vip/product_pic/vip4.jpg","VIP",4,1),
+(null,"无霜","img/index/product_vip/user_pic/wushuang.png","img/index/product_vip/product_pic/vip4.jpg","VIP",4,1),
 (null,"柒上设计表现机构","img/index/product_vip/user_pic/ranshang.png","img/index/product_vip/product_pic/vip5.jpg","VIP",5,1),
 (null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","VIP",6,1),
 (null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg","VIP",7,1),

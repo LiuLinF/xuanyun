@@ -17,38 +17,9 @@
 </head>
 
 <body>
-    <!--头部-->
-    <div class="container-fulls">
-        <div class="header_style">
-            <div class="ml-5 p-0 d-inline-block">
-                <a href=""><img class="py-3 pl-5" src="img/index/shine_new_logo-ni.png" alt="" /></a>
-            </div>
-            <div class="p-0 d-inline-block">
-                <ul class="list-unstyled ">
-                    <li class="d-inline-block px-3 py-3"><a href="recent_news.html">最新动态</a></li>
-                    <li class="d-inline-block px-3 py-3"><a href="cloud_rendering.html">云渲染</a></li>
-                    <li class="d-inline-block px-3 py-3"><a href="#">云模型</a></li>
-                    <li class="d-inline-block px-3 py-3"><a href="cloud_classroom.html">云课堂</a></li>
-                    <li class="d-inline-block px-3 py-3"><a href="panorama.html">全景图</a></li>
-                    <li class="d-inline-block px-3 pb-3 h2">
-                        <a href="#">...</a>
-                        <ul class="p-4 display_ul">
-                            <li class="h6">RENDERWOW</li>
-                            <li class="h6">炫我科技</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="p-0 py-3 d-inline-block ">
-                <span><a href="#" class="btn btn-primary mr-5 ">下载客户端</a></span>
-                <a href="#">登录</a>
-                <span class="px-4">|</span>
-                <a href="#">注册</a>
-            </div>
-        </div>
-    </div>
+    <header></header>
     <!--轮播图-->
-    <div class="container-full">
+    <div class="container-fulln">
         <div id="demo" class="carousel" data-ride="carousel">
             <div class="carousel-inner w-100">
                 <!-- 第一张-->
@@ -164,70 +135,70 @@
                     </div>-->
                 </div>
                 <!-- 3 -->
-                <div>
-                    <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
+                <div id="p3">
+                    <!-- <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
                             <img class="user_pic" src="img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- 4 -->
-                <div>
-                    <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
+                <div id="p4">
+                    <!-- <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
                             <img class="user_pic" src="img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- 5 -->
-                <div>
-                    <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
+                <div id="p5">
+                    <!-- <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
                             <img class="user_pic" src="img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- 6 -->
-                <div>
-                    <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
+                <div id="p6">
+                    <!-- <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
                             <img class="user_pic" src="img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- 7 -->
-                <div>
-                    <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
+                <div id="p7">
+                    <!-- <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
                             <img class="user_pic" src="img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- 8 -->
-                <div>
-                    <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
+                <div id="p8">
+                    <!-- <img src="img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
                             <img class="user_pic" src="img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
-                    </div>
+                    </div> -->
                 </div>
             </li>
         </ul>
@@ -338,19 +309,18 @@
             </li>
         </ul>
     </div>
-    <!--底部-->
-    <footer>
-        <iframe class="my_footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
-    </footer>
+    <footer></footer>
     <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/ajax.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
     <script src="js/index.js"></script>
     <script>
-        $("nav>ul:last").on("click","li",function(e){
+        $("nav>ul:last").on("click", "li", function (e) {
             e.preventDefault();
             $("nav>ul:last").children().removeClass("active");
             $(this).addClass("active");
         })
     </script>
 </body>
+
 </html>
