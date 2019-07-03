@@ -8,6 +8,6 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {path:"/login",component:Login},
-    {path:"/reg",component:Reg}
+    {path:"/reg",component:Reg},
   ]
 })
