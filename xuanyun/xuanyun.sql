@@ -318,3 +318,11 @@ insert into xy_index_outdoor_building values
 (null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip6.jpg","img/index/product_vip/product_pic/jindou.png",6,6,11),
 (null,"本末设计表现","img/index/product_vip/user_pic/benmo.png","img/index/product_vip/product_pic/vip7.jpg","img/index/product_vip/product_pic/jindou.png","2.8",7,11),
 (null,"T.R.Y空间设计工作室","img/index/product_vip/user_pic/TRY.png","img/index/product_vip/product_pic/vip8.jpg","img/index/product_vip/product_pic/jindou.png","2.8",8,11);
+
+
+#全景图——网站服务（Web services）
+create table web_services(
+	wid int primary key auto_increment, #编号
+	web_img varchar(128),  #商品图片
+	title varchar(32),  #标题
+);
