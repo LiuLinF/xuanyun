@@ -10,6 +10,6 @@ export default new Router({
   routes: [
     {path:"/login",component:Login},
     {path:"/reg",component:Reg},
-    {path:"/index",component:Index},
+    {path:"/",component:Index},
   ]
 })
