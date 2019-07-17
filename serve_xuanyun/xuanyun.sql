@@ -272,4 +272,49 @@ insert into xy_index_office_space values
 (null,"无霜","http://127.0.0.1:3000/img/index/product_vip/user_pic/wushuang","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,9),
 (null,"柒上设计表现机构","http://127.0.0.1:3000/img/index/product_vip/user_pic/ranshang.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,9),
 (null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip6.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png",6,6,9),
-(null,"本末设计表现","http://127.0.0.1:3000/img/index/product_vip/user_pic/benmo.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip7.jpg","http://127.0.0.1:3000/img/index/p
+(null,"本末设计表现","http://127.0.0.1:3000/img/index/product_vip/user_pic/benmo.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip7.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",7,9),
+(null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip8.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",8,9);
+
+#14.首页商品栏目表_休闲娱乐 （xy_index_leisure ）
+create table xy_index_leisure(
+	sid int primary key auto_increment, #编号
+	name varchar(64),  #用户名
+	user_pic varchar(128),  #用户头像
+	product_pic varchar(128),  #商品图片
+	Price_img varchar(128),   #价格图片
+	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
+	fid int  #商品类型
+); 
+#首页商品栏目表_休闲娱乐 插入数据
+insert into xy_index_leisure values
+(1,"mm4521","http://127.0.0.1:3000/img/index/product_vip/user_pic/getHeader.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip1.jpg",null,"VIP",1,10),
+(null,"SIVANT","http://127.0.0.1:3000/img/index/product_vip/user_pic/SIVANT.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip2.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",2,10),
+(null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip3.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",3,10),
+(null,"无霜","http://127.0.0.1:3000/img/index/product_vip/user_pic/wushuang","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,10),
+(null,"柒上设计表现机构","http://127.0.0.1:3000/img/index/product_vip/user_pic/ranshang.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,10),
+(null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip6.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png",6,6,10),
+(null,"本末设计表现","http://127.0.0.1:3000/img/index/product_vip/user_pic/benmo.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip7.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",7,10),
+(null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip8.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",8,10);
+
+#15.首页商品栏目表_室外建筑 （xy_index_outdoor_building ）
+create table xy_index_outdoor_building(
+	sid int primary key auto_increment, #编号
+	name varchar(64),  #用户名
+	user_pic varchar(128),  #用户头像
+	product_pic varchar(128),  #商品图片
+	Price_img varchar(128),   #价格图片
+	price DECIMAL(10,1),  #价格
+	sort smallint,  #排序
+	fid int  #商品类型
+); 
+#首页商品栏目表_公共空间 插入数据
+insert into xy_index_outdoor_building values
+(1,"mm4521","http://127.0.0.1:3000/img/index/product_vip/user_pic/getHeader.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip1.jpg",null,"VIP",1,11),
+(null,"SIVANT","http://127.0.0.1:3000/img/index/product_vip/user_pic/SIVANT.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip2.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",2,11),
+(null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip3.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",3,11),
+(null,"无霜","http://127.0.0.1:3000/img/index/product_vip/user_pic/wushuang","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip4.jpg",null,"VIP",4,11),
+(null,"柒上设计表现机构","http://127.0.0.1:3000/img/index/product_vip/user_pic/ranshang.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip5.jpg",null,"VIP",5,11),
+(null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip6.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png",6,6,11),
+(null,"本末设计表现","http://127.0.0.1:3000/img/index/product_vip/user_pic/benmo.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip7.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",7,11),
+(null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip8.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",8,11);

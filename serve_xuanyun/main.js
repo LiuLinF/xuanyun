@@ -4,7 +4,7 @@ const indexrouter=require('./router/index.js')
 const bodyparse=require("body-parser")
 
 const session = require("express-session");
-//const loginrouter=require('./router/login.js')
+const loginrouter=require('./router/login.js')
 //创建web服务器
 var server=express();
 const cors=require("cors");
