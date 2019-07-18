@@ -4,7 +4,7 @@
       <li>
         <a href="#">
           <span>
-            <img src="img/index/vip_item_banner_logo.png" alt />
+            <img src="http://127.0.0.1:3000/img/index/vip_item_banner_logo.png" alt />
           </span>
           VIP模板
         </a>
@@ -12,39 +12,18 @@
       <li>
         <a href="#">
           <span>
-            <img src="img/index/vip_item_banner_logo.png" alt />
+            <img src="http://127.0.0.1:3000/img/index/vip_item_banner_logo.png" alt />
           </span>
           VIP模板
         </a>
       </li>
-      <li>
-        <a href="#">VIP模板</a>
-      </li>
-      <li>
-        <a href="#">VIP模板</a>
-      </li>
-      <li>
-        <a href="#">VIP模板</a>
-      </li>
-      <li>
-        <a href="#">VIP模板</a>
-      </li>
-      <li>
-        <a href="#">VIP模板</a>
-      </li>
-      <li>
-        <a href="#">VIP模板</a>
-      </li>
-      <li>
-        <a href="#">VIP模板</a>
-      </li>
-      <li>
-        <a href="#">VIP模板</a>
+      <li v-for="(item,i) of family" :key="i">
+        <router-link to="#">{{item.template_type}}</router-link>
       </li>
       <li>
         <a href="#">
           <span>
-            <img src="img/index/vip_item_banner_logo.png" alt />
+            <img src="http://127.0.0.1:3000/img/index/vip_item_banner_logo.png" alt />
           </span>
           VIP模板
         </a>
@@ -52,37 +31,52 @@
       <li>
         <a href="#">
           <span>
-            <img src="img/index/vip_item_banner_logo.png" alt />
+            <img src="http://127.0.0.1:3000/img/index/vip_item_banner_logo.png" alt />
           </span>
           VIP模板
         </a>
       </li>
     </ul>
-    <hr style="margin: 0" />
+    <hr style="margin: 0"/>
     <div class="count">
-    <el-tabs v-model="activeName" @tab-click="handleClick">
-    <el-tab-pane label="用户管理" name="first">用户管理</el-tab-pane>
-    <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
-    <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
-    <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
-  </el-tabs>
+      <el-tabs v-model="activeName" @tab-click="handleClick" class="n">
+        <el-tab-pane label="用户管理" name="first">
+          <product></product>
+        </el-tab-pane>
+        <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
+        <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
+        <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
+      </el-tabs>
     </div>
   </nav>
 </template>
 <script>
+import product from "./product1";
 export default {
-    data() {
-      return {
-          activeName:"first"
-      };
-    },
-    methods: {
-        handleClick(){
-            console.log(1)
-        }
+  components: {
+    product: product
+  },
+  data() {
+    return {
+      activeName: "first",
+      family:"",
+      productvip:""
+    };
+  },
+  methods: {
+    handleClick() {
     }
-}
-
+  },
+  created() {
+    this.axios.get("/index/family").then(result=>{
+      this.family=result.data;
+    })
+  this.axios.get("/index//productvip").then(result=>{
+    this.productvip=result.data
+    console.log(this.productvip)
+  })
+  },
+};
 </script>
 <style scoped>
 nav {
@@ -143,12 +137,5 @@ nav > ul:first-child li:nth-child(11) a {
   height: 30px;
   line-height: 30px;
   margin-right: 20px;
-}
-.count {
-  width: 415px;
-  margin: 0 auto;
-}
-.el-tabs__nav-wrap::after {
-  display: none;background-color:none;
 }
 </style>

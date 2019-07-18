@@ -1,8 +1,9 @@
 <template>
   <div>
     <myheader></myheader>
+    <carousel></carousel>
     <navbar></navbar>
-    <product></product>
+    <!-- <product></product> -->
     <myfooter></myfooter>
   </div>
 </template>
@@ -10,13 +11,14 @@
 import Header from "./index/header";
 import Footer from "./index/footer";
 import Navbar from "./index/nav_bar";
-import Product from "./index/product1";
+import carousel from "./index/carousel";
 export default {
   components: {
     myheader: Header,
     myfooter:Footer,
     navbar:Navbar,
-    product:Product
+    // product:Product,
+    carousel:carousel
   },
   data(){
       return{
