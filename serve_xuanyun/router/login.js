@@ -8,7 +8,7 @@ const pool=require("../pool");
         pool.query(sql,[uname,upwd],(err,result)=>{
             if(err) throw err
             if(result.length>0){
-                res.send(result)    
+                res.send({code:1,msg:"查询成功"})    
             }else{
                 res.send({code:-1,msg:"查无此人"})
             }
