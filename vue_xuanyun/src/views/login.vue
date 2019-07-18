@@ -18,9 +18,9 @@
       <div>
         <img src="../img/login/ziti_07.png" alt />
         <h4>炫云账号登录</h4>
-        <el-input v-model="input" placeholder="请输入内容"></el-input>
-        <el-input placeholder="请输入密码" v-model="password" show-password></el-input>
-        <el-button style="width:100%">登录</el-button>
+        <el-input v-model="uname" placeholder="请输入用户名"></el-input>
+        <el-input placeholder="请输入密码" v-model="upwd" show-password></el-input>
+        <el-button style="width:100%" @click="login()">登录</el-button>
         <div>
             <router-link to="#" class="link_left">注册账户</router-link>
             <router-link to="#" class="link_right">忘记密码?</router-link>
@@ -34,9 +34,24 @@
 export default {
   data() {
     return {
-        input:'',
-        password:''
+        uname:'',
+        upwd:''
     };
+  },
+  methods:{
+    login(){
+      var uname=this.uname;
+      var upwd=this.upwd;
+      if(uname==""||upwd==""){
+        alert("用户名或密码不能为空")
+      }else{
+        this.axios.get("http://127.0.0.1:3000/login",{uname,upwd}
+        ).then(result=>{
+          console.log(result.data)
+          console.log(uname,upwd)
+        })
+      }
+    }
   }
 };
 </script>

@@ -7,6 +7,10 @@ import ElementUI from 'element-ui';
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+//引入axios文件
+import axios from "./axios"
+Vue.use(axios)
+
 new Vue({
   router,
   store,
