@@ -24,6 +24,7 @@
         <div class="p-0 py-3 d-inline-block" style="text-align: right;">
             <span><a href="#" class="btn btn-primary mr-5 ">下载客户端</a></span>
             <a href="#">登录</a>
+            <p v-if="sessionStorage.setItem(name)==true">{{uname}}</p>
             <span class="px-4">|</span>
             <a href="#">注册</a>
         </div>
@@ -34,9 +35,13 @@
 export default {
     data(){
         return{
-
+            uname:""
         }
+    },
+    methods:{
+      this.unameuname=sessionStorage.getItem("name")+" 欢迎回来 "  
     }
+    
 }
 </script>
 <style scoped>
