@@ -22,25 +22,6 @@ insert into xy_user values
 	(null,"本末设计表现","123456","123456@qq.com",12345687890,"狗蛋"),
 	(null,"蒙流纯牛奶","123456","123456@qq.com",12345677890,"狗蛋");
 
-#2.模板类型表（xy_template_family）
-create table xy_template_family(
-	fid int primary key auto_increment,  #编号
-	template_type varchar(32)  #模板类型
-);
-#模板类别表（xy_template_family）插入数据
-insert into xy_template_family values
-	(1,"VIP模型"),
-	(null,"收费模型"),
-	(null,"免费模型"),
-	(null,"家装别墅"),
-	(null,"单体模型"),
-	(null,"酒店餐饮"),
-	(null,"商业空间"),
-	(null,"公共空间"),
-	(null,"办公空间"),
-	(null,"休闲娱乐"),
-	(null,"室外建筑");
-
 #3.商品详情图表 （xy_template_pic）
 create table xy_template_pic(
 	pid int primary key auto_increment,  #编号
@@ -67,7 +48,7 @@ insert into xy_template_pic values
 #4.轮播图表 （xy_carousel）
 create table xy_carousel(
 	cid int primary key auto_increment,
-	c_img varchar(128),
+	img_url varchar(128),
 	img_title varchar(64)
 );
 #轮播图表 （xy_carousel） 插入数据
@@ -78,6 +59,22 @@ insert into xy_carousel values
 	(null,"http://127.0.0.1:3000/img/index/carousel/4.jpg","现代沙发组合模型"),
 	(null,"http://127.0.0.1:3000/img/index/carousel/5.jpg","中式园林规划模型"),
 	(null,"http://127.0.0.1:3000/img/index/carousel/6.jpg","现代客餐厅全景模型");
+
+#2.模板类型表（xy_template_family）
+create table xy_template_family(
+	fid int primary key auto_increment,  #编号
+	template_type varchar(32)  #模板类型
+);
+#模板类别表（xy_template_family）插入数据
+insert into xy_template_family values
+	(null,"免费模型"),
+	(null,"家装别墅"),
+	(null,"单体模型"),
+	(null,"商业空间"),
+	(null,"公共空间"),
+	(null,"办公空间"),
+	(null,"休闲娱乐"),
+	(null,"室外建筑");
 
 #5.首页商品栏目表_VIP （xy_index_product_vip）
 create table xy_index_product_vip(

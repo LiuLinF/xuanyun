@@ -10,4 +10,26 @@ const pool=require("../pool");
             }
         })
     })
+
+    router.get("/carousel",(req,res)=>{
+        var sql="select img_url from xy_carousel"
+        pool.query(sql,(err,result)=>{
+            if(err) throw err;
+            res.send(result)
+        })
+    })
+    router.get("/family",(req,res)=>{
+        var sql="select template_type from xy_template_family"
+        pool.query(sql,(err,result)=>{
+            if(err) throw err
+            res.send(result)
+        })
+    })
+    router.get("/productvip",(req,res)=>{
+        var sql="select * from xy_index_product_vip"
+        pool.query(sql,(err,result)=>{
+            if(err) throw err
+            res.send(result)
+        })
+    })
 module.exports=router;
