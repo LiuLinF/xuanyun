@@ -4,7 +4,7 @@
     <div class="header_style">
       <div class="ml-5 p-0 d-inline-block">
         <a href>
-          <img class="py-3" src="../../img/index/shine_new_logo-ni.png" alt />
+          <img class="py-3" src="http:127.0.0.1:3000/img/index/shine_new_logo-ni.png" alt />
         </a>
       </div>
       <div class="p-0 d-inline-block">
