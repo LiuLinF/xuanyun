@@ -10,19 +10,19 @@
       <div class="p-0 d-inline-block">
         <ul class="list-unstyled">
           <li class="d-inline-block px-3 py-3">
-            <a href="recent_news.html">最新动态</a>
+            <router-link to="/recent_news">最新动态</router-link>
           </li>
           <li class="d-inline-block px-3 py-3">
-            <a href="cloud_rendering.html">云渲染</a>
+            <router-link to="/recent_news">云渲染</router-link>
           </li>
           <li class="d-inline-block px-3 py-3">
-            <a href="index.html">云模型</a>
+            <router-link to="/recent_news">云模型</router-link>
           </li>
           <li class="d-inline-block px-3 py-3">
-            <a href="cloud_classroom.html">云课堂</a>
+            <router-link to="/recent_news">云课堂</router-link>
           </li>
           <li class="d-inline-block px-3 py-3">
-            <a href="panorama.html">全景图</a>
+            <router-link to="/recent_news">全景图</router-link>
           </li>
           <li class="d-inline-block px-3 pb-3 h2">
             <a href="#">...</a>

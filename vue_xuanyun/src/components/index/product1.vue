@@ -15,10 +15,10 @@
             <li>
                 <!-- 1 -->
                 <div id="p1">
-                     <img src="../../img\index\product_vip\product_pic/vip1.jpg" alt="">
+                     <img src="http://127.0.0.1:3000/img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
-                            <img class="user_pic" src="../../img\index\product_vip\user_pic/getHeader.png" alt="">
+                            <img class="user_pic" src="http://127.0.0.1:3000/img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
@@ -26,10 +26,10 @@
                 </div>
                 <!-- 2 -->
                 <div id="p2">
-                     <img src="../../img\index\product_vip\product_pic/vip1.jpg" alt="">
+                     <img src="http://127.0.0.1:3000/img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
-                            <img class="user_pic" src="../../img\index\product_vip\user_pic/getHeader.png" alt="">
+                            <img class="user_pic" src="http://127.0.0.1:3000/img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a> 
@@ -37,10 +37,10 @@
                 </div>
                 <!-- 3 -->
                 <div id="p3">
-                     <img src="../../img\index\product_vip\product_pic/vip1.jpg" alt="">
+                     <img src="http://127.0.0.1:3000/img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
-                            <img class="user_pic" src="../../img\index\product_vip\user_pic/getHeader.png" alt="">
+                            <img class="user_pic" src="http://127.0.0.1:3000/img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
@@ -48,10 +48,10 @@
                 </div>
                 <!-- 4 -->
                 <div id="p4">
-                     <img src="../../img\index\product_vip\product_pic/vip1.jpg" alt="">
+                     <img src="http://127.0.0.1:3000/img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
-                            <img class="user_pic" src="../../img\index\product_vip\user_pic/getHeader.png" alt="">
+                            <img class="user_pic" src="http://127.0.0.1:3000/img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
@@ -59,10 +59,10 @@
                 </div>
                 <!-- 5 -->
                 <div id="p5">
-                     <img src="../../img\index\product_vip\product_pic/vip1.jpg" alt="">
+                     <img src="http://127.0.0.1:3000/img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
-                            <img class="user_pic" src="../../img\index\product_vip\user_pic/getHeader.png" alt="">
+                            <img class="user_pic" src="http://127.0.0.1:3000/img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
@@ -70,10 +70,10 @@
                 </div>
                 <!-- 6 -->
                 <div id="p6">
-                     <img src="../../img\index\product_vip\product_pic/vip1.jpg" alt="">
+                     <img src="http://127.0.0.1:3000/img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
-                            <img class="user_pic" src="../../img\index\product_vip\user_pic/getHeader.png" alt="">
+                            <img class="user_pic" src="http://127.0.0.1:3000/img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
@@ -81,10 +81,10 @@
                 </div>
                 <!-- 7 -->
                 <div id="p7">
-                     <img src="../../img\index\product_vip\product_pic/vip1.jpg" alt="">
+                     <img src="http://127.0.0.1:3000/img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
-                            <img class="user_pic" src="../../img\index\product_vip\user_pic/getHeader.png" alt="">
+                            <img class="user_pic" src="http://127.0.0.1:3000/img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>
@@ -92,10 +92,10 @@
                 </div>
                 <!-- 8 -->
                 <div id="p8">
-                     <img src="../../img\index\product_vip\product_pic/vip1.jpg" alt="">
+                     <img src="http://127.0.0.1:3000/img\index\product_vip\product_pic/vip1.jpg" alt="">
                     <div>
                         <a href="#">
-                            <img class="user_pic" src="../../img\index\product_vip\user_pic/getHeader.png" alt="">
+                            <img class="user_pic" src="http://127.0.0.1:3000/img\index\product_vip\user_pic/getHeader.png" alt="">
                             <span>mm4521</span>
                         </a>
                         <a href="#">VIP</a>

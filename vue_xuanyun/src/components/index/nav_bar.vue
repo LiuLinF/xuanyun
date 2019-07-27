@@ -136,7 +136,7 @@ export default {
     this.axios.get("/index/family").then(result => {
       this.family = result.data;
     });
-    this.axios.get("/index//productvip").then(result => {
+    this.axios.get("/index/productvip").then(result => {
       this.productvip = result.data;
     });
     this.axios.get("/index/productvip").then(result=>{
