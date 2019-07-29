@@ -13,7 +13,7 @@
             <router-link to="/recent_news">最新动态</router-link>
           </li>
           <li class="d-inline-block px-3 py-3">
-            <router-link to="/recent_news">云渲染</router-link>
+            <router-link to="/cloud_rendering">云渲染</router-link>
           </li>
           <li class="d-inline-block px-3 py-3">
             <router-link to="/recent_news">云模型</router-link>
@@ -22,7 +22,7 @@
             <router-link to="/recent_news">云课堂</router-link>
           </li>
           <li class="d-inline-block px-3 py-3">
-            <router-link to="/recent_news">全景图</router-link>
+            <router-link to="/panorama">全景图</router-link>
           </li>
           <li class="d-inline-block px-3 pb-3 h2">
             <a href="#">...</a>

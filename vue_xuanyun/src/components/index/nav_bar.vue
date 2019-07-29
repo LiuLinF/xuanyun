@@ -108,11 +108,7 @@
   </div>
 </template>
 <script>
-import product from "./product1";
 export default {
-  components: {
-    product: product
-  },
   data() {
     return {
       activeName: "first",

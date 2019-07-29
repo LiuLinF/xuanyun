@@ -17,7 +17,6 @@ export default {
     created() {
         this.axios.get("/index/carousel").then(result=>{
             this.data=result.data
-            console.log(this.data)
         })
     },
 }
