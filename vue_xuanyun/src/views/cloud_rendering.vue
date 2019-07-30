@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Headers></Headers>
     <!--轮播图-->
     <div class="container-fulln">
       <div id="demo" class="carousel" data-ride="carousel">
@@ -238,6 +239,7 @@
       </div>
       <a class="index_btn" href="#">了解更多</a>
     </div>
+    <Footers></Footers>
   </div>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Headers></Headers>
     <div>
       <img class="bg_img" src="http://127.0.0.1:3000/img/index/news_banner-ni.jpg" alt />
       <div class="index_wrap">
@@ -187,17 +187,11 @@
       <span>2</span>
       <a href="recent_news2.html">下一页</a>
     </div>
-    <Footer></Footer>
+    <Footers></Footers>
   </div>
 </template>
 <script>
-import Header from "../components/index/header.vue";
-import Footer from "../components/index/footer.vue";
 export default {
-  compontens: {
-    Header,
-    Footer
-  },
   data() {
     return {};
   }
@@ -237,13 +231,15 @@ ul {
 .index_wrap > ul li:hover {
   background-color: #fd7e14;
 }
-.index_img_wrap {
-  width: 100%;
+.index_img_wrap::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 .index_img_wrap > div {
-  margin-left: 150px;
   width: 1220px;
   margin-top: 90px;
+  margin: 0 auto;
 }
 .index_img_wrap > div > div {
   position: relative;
@@ -285,7 +281,6 @@ ul {
 }
 .card_text_wrap > div {
   display: inline-block;
-  float: right;
   position: relative;
 }
 .card_text_wrap > div > span {

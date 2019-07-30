@@ -67,7 +67,6 @@ create table xy_template_family(
 );
 #模板类别表（xy_template_family）插入数据
 insert into xy_template_family values
-	(null,"免费模型"),
 	(null,"家装别墅"),
 	(null,"单体模型"),
 	(null,"商业空间"),
@@ -75,6 +74,123 @@ insert into xy_template_family values
 	(null,"办公空间"),
 	(null,"休闲娱乐"),
 	(null,"室外建筑");
+#模板小类别表(xy_template_xiaofamily)
+create table xy_template_xiaofamily(
+	id int primary key auto_increment,  #编号
+	template_type varchar(32),  #模板类型
+	fid int
+);
+
+insert into xy_template_xiaofamily values
+(null,"客餐厅",1),
+(null,"卧室",1),
+(null,"客厅",1),
+(null,"书房",1),
+(null,"儿童房",1),
+(null,"整体场景",1),
+(null,"餐厅",1),
+(null,"影音厅",1),
+(null,"厨房",1),
+(null,"茶室",1),
+(null,"地下室",1),
+(null,"阳台花园",1),
+(null,"衣帽间",1),
+(null,"卫浴",1),
+(null,"玄关过道",1),
+(null,"阳台",1),
+(null,"其他",1),
+(null,"陈设饰品",2),
+(null,"柜子/置物架",2),
+(null,"桌椅",2),
+(null,"沙发",2),
+(null,"沙发端景台条案",2),
+(null,"装饰画/挂件",2),
+(null,"植物盆栽",2),
+(null,"茶几边几",2),
+(null,"床具",2),
+(null,"灯具",2),
+(null,"货架/专柜",2),
+(null,"电器",2),
+(null,"欧式柜件",2),
+(null,"人物",2),
+(null,"屏风隔断",2),
+(null,"五金构件",2),
+(null,"服饰/鞋帽",2),
+(null,"厨具/卫浴",2),
+(null,"抱枕",2),
+(null,"窗帘",2),
+(null,"健身器材",2),
+(null,"背景墙",2),
+(null,"其他",2),
+(null,"餐饮",3),
+(null,"酒店客房/宾馆",3),
+(null,"酒店大厅",3),
+(null,"包间",3),
+(null,"甜品店",3),
+(null,"卫生间",3),
+(null,"咖啡店",3),
+(null,"电梯过道",3),
+(null,"茶楼",3),
+(null,"专卖店",4),
+(null,"展厅",4),
+(null,"售楼处",4),
+(null,"商场超市",4),
+(null,"婚纱摄影",4),
+(null,"橱窗设计",4),
+(null,"服装店",4),
+(null,"其他",4),
+(null,"培训机构",5),
+(null,"幼儿园",5),
+(null,"图书馆",5),
+(null,"医院",5),
+(null,"银行",5),
+(null,"学校",5),
+(null,"其他",5),
+(null,"办公大厅",6),
+(null,"会议室",6),
+(null,"休息接待室",6),
+(null,"经理室",6),
+(null,"前台",6),
+(null,"电梯厅",6),
+(null,"会客室",6),
+(null,"会所",7),
+(null,"酒吧",7),
+(null,"KTV",7),
+(null,"游泳健身",7),
+(null,"电影院",7),
+(null,"网吧游戏厅",7),
+(null,"娱乐设施",7),
+(null,"其他",7),
+(null,"建筑景观",8),
+(null,"别墅外立面",8),
+(null,"公共设施",8),
+(null,"园林小品",8),
+(null,"园林景观",8),
+(null,"店铺门头",8),
+(null,"鸟瞰规划",8);
+
+#模板风格表（xy_template_style）
+create table xy_template_style(
+	id int primary key auto_increment, #编号
+	template_title varchar(32)  #模板类型
+);
+
+insert into xy_template_style values
+(null,"现代"),
+(null,"后现代"),
+(null,"欧式"),
+(null,"北欧"),
+(null,"工业风"),
+(null,"美式"),
+(null,"日式"),
+(null,"中式"),
+(null,"地中海"),
+(null,"混搭"),
+(null,"东南亚"),
+(null,"港式"),
+(null,"简欧"),
+(null,"法式"),
+(null,"新中式");
 
 #5.首页商品栏目表_VIP （xy_index_product_vip）
 create table xy_index_product_vip(

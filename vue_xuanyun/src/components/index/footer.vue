@@ -5,20 +5,20 @@
             <ul class="list-unstyled breadcrumb m-0 mb-3">
                 <li class="float-left breadcrumb-item">
                     <a class="text-white" href="">
-                        <img class="pr-2" src="http:127.0.0.1:3000/img/footer/shinewonder_service_de-ni.png" alt="" />
-                        <img class="footer_img_erweima" src="http:127.0.0.1:3000/img/footer/fuwu-ni.jpg" alt="">
+                        <img class="pr-2" src="http://127.0.0.1:3000/img/footer/shinewonder_service_de-ni.png" alt="" />
+                        <img class="footer_img_erweima" src="http://127.0.0.1:3000/img/footer/fuwu-ni.jpg" alt="">
                         炫云服务号</a>
                 </li>
                 <li class="float-left breadcrumb-item">
                     <a class="text-white" href="">
-                        <img class="pr-2" src="http:127.0.0.1:3000/img/footer/reading_shinewonder-ni.png" alt="" />
-                        <img class="footer_img_erweima" src="http:127.0.0.1:3000/img/footer/dingRead-ni.jpg" alt="">
+                        <img class="pr-2" src="http://127.0.0.1:3000/img/footer/reading_shinewonder-ni.png" alt="" />
+                        <img class="footer_img_erweima" src="http://127.0.0.1:3000/img/footer/dingRead-ni.jpg" alt="">
                         炫云订阅号</a>
                 </li>
                 <li class="float-left breadcrumb-item">
                     <a class="text-white" href="">
-                        <img class="pr-2" src="http:127.0.0.1:3000/img/footer/shinewonder_weibo_de-ni.png" alt="" />
-                        <img class="footer_img_erweima" src="http:127.0.0.1:3000/img/footer/weibo-ni.jpg" alt="">
+                        <img class="pr-2" src="http://127.0.0.1:3000/img/footer/shinewonder_weibo_de-ni.png" alt="" />
+                        <img class="footer_img_erweima" src="http://127.0.0.1:3000/img/footer/weibo-ni.jpg" alt="">
                         炫云微博</a>
                 </li>
                 <li class="float-left breadcrumb-item">
