@@ -5,6 +5,7 @@ const bodyparse=require("body-parser")
 
 const session = require("express-session");
 const loginrouter=require('./router/login.js')
+const productlistrouter=require('./router/productList.js')
 //创建web服务器
 var server=express();
 const cors=require("cors");
@@ -35,3 +36,4 @@ resave:true,
 server.use(express.static("public"))
 server.use('/index',indexrouter)
 server.use('/login',loginrouter)
+server.use('/productlist',productlistrouter)
