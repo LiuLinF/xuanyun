@@ -5,6 +5,7 @@ import Reg from './views/reg.vue'
 import Index from './views/index.vue'
 import product from './views/index/product1.vue'
 import carousel from './views/index/carousel.vue'
+import productList from './views/productList.vue'
 
 Vue.use(Router)
 
@@ -15,6 +16,7 @@ export default new Router({
     {path:"/reg",component:Reg},
     {path:"/carousel",component:carousel},
     {path:"/product",component:product},
+    {path:"/productlist",component:productList},
 
   ]
 })
