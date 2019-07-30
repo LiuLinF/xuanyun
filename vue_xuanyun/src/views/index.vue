@@ -1,24 +1,22 @@
 <template>
   <div>
-    <myheader></myheader>
+    <Header></Header>
     <carousel></carousel>
-    <navbar></navbar>
-    <!-- <product></product> -->
-    <myfooter></myfooter>
+    <Navbar></Navbar>
+    <Footer></Footer>
   </div>
 </template>
 <script>
-import Header from "./index/header";
-import Footer from "./index/footer";
-import Navbar from "./index/nav_bar";
-import carousel from "./index/carousel";
+import carousel from '../components/index/carousel.vue'
+import Header from "../components/index/header.vue"
+import Footer from "../components/index/footer.vue"
+import Navbar from "../components/index/nav_bar.vue"
 export default {
   components: {
-    myheader: Header,
-    myfooter:Footer,
-    navbar:Navbar,
-    // product:Product,
-    carousel:carousel
+    Header,
+    Footer,
+    Navbar,
+    carousel
   },
   data(){
       return{

@@ -315,3 +315,19 @@ insert into xy_index_outdoor_building values
 (null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip6.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png",6,6,11),
 (null,"本末设计表现","http://127.0.0.1:3000/img/index/product_vip/user_pic/benmo.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip7.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",7,11),
 (null,"T.R.Y空间设计工作室","http://127.0.0.1:3000/img/index/product_vip/user_pic/TRY.png","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip8.jpg","http://127.0.0.1:3000/img/index/product_vip/product_pic/jindou.png","2.8",8,11);
+
+
+#创建首页最新动态表（xy_index_state）
+create table xy_index_state(
+	sid int primary key auto_increment, #编号
+	product_pic varchar(128),  #图片
+	title varchar(128),      #标题
+	dates varchar(32),		#时间
+	texts varchar(128)		#内容
+); 
+
+insert into xy_index_state values
+(null,"http://127.0.0.1:3000/img/index/index_state1.png","炫云云模型VIP会员下载收费模型享受7折价","2019/06/04","劲爆好消息~炫云云模型VIP会员权限新升级，让您的VIP身份绝对“货真价实”，绝对“尊享”"),
+(null,"http://127.0.0.1:3000/img/index/index_state2.png","第二届“征集合作伙伴及上传有奖”第十四期获奖结果公布","2019/06/03","六月大热天悄然来袭，炫云帮您“解暑”这个夏天~~ 参与活动拿现金，这个夏天的冰激凌，炫云来买单。"),
+(null,"http://127.0.0.1:3000/img/index/index_state3.png","第二届“征集合作伙伴及上传有奖”第十三期获奖结果公布","2019/06/04","迎接即将到来的520，炫云“以爱之名”送上本周小惊喜啦~~"),
+(null,"http://127.0.0.1:3000/img/index/index_state4.png","第二届“征集合作伙伴及上传有奖”第十二期获奖结果公布","2019/06/04","在这个柳絮漫天飞舞的季节，我们休完了近几年来最长的一个五一假期，大家是否还在意犹未尽呢？快快回神备战吧，炫云要给您送上开工小惊喜啦");

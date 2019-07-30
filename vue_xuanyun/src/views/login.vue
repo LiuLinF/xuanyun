@@ -1,7 +1,7 @@
 <template>
   <div class="login_style">
     <div>
-      <img src="../img/footer/logo_03.png" alt />
+      <img src="http:127.0.0.1:3000/img/footer/logo_03.png" alt />
       <ul class="login_list">
         <li>
           <router-link to="#" class="bar_login">登录</router-link>
@@ -16,7 +16,7 @@
     </div>
     <div class="login_bg">
       <div>
-        <img src="../img/login/ziti_07.png" alt />
+        <img src="http:127.0.0.1:3000/img/login/ziti_07.png" alt />
         <h4>炫云账号登录</h4>
         <el-input v-model="uname" placeholder="请输入用户名"></el-input>
         <el-input placeholder="请输入密码" v-model="upwd" show-password></el-input>
@@ -91,7 +91,7 @@ a:hover {
 }
 .login_bg {
   height: 560px;
-  background: url("../img/login/login_bj_03.jpg") no-repeat;
+  background: url("http:127.0.0.1:3000/img/login/login_bj_03.jpg") no-repeat;
   background-position: 50%;
   text-align: center;
   position: relative;
