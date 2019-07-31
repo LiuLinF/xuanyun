@@ -88,6 +88,13 @@ export default {
 }
 </script>
 <style scoped>
+ul{
+  margin-block-end: 0;
+}
+.py-3{
+  height: 65px;
+  line-height: 28px;
+}
 .container-fulls > div {
   width: 1500px;
   margin: 0 auto;

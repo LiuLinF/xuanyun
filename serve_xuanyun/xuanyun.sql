@@ -38,8 +38,8 @@ create table xy_template_pic(
 	uploading int,   #上传作品量
 	spec varchar(64)  #详细说明
 );
-#商品详情图表 （xy_template_pic） 插入数据
-insert into xy_template_pic values
+#商品详情图表 （xy_details） 插入数据
+insert into xy_details values
 	(1,"北欧客餐厅全景模型","ID：M0000154542","版权所属 :  炫我科技","2019-06-14 09:00:03","http://127.0.0.1:3000/img/index/commodity_details/1.jpg",10,12,13,"mm4521","http://127.0.0.1:3000/img/index/product_vip/user_pic/getHeader.png",99,"暂无"),
 	(null,"现代客餐厅全景模型","ID：M00001536391","版权所属 :  炫我科技","2019-06-12 09:00:17","http://127.0.0.1:3000/img/index/	commodity_details/1.jpg",107,14,13,"柒上设计表现机构","http://127.0.0.1:3000/img/index/product_vip/user_pic/ranshang.png",999,"暂无"),
 	(null,"现代卧室全景模型","ID：M0000154591","版权所属 :  炫我科技","2019-06-15 09:00:34","http://127.0.0.1:3000/img/index/commodity_details/1.jpg",107,14,13,"SIVANT","http://127.0.0.1:3000/img/index/product_vip/user_pic/SIVANT.png",999,"暂无"),
@@ -191,6 +191,24 @@ insert into xy_template_style values
 (null,"简欧"),
 (null,"法式"),
 (null,"新中式");
+
+
+create table xy_recentNews_preferential(
+	id int primary key auto_increment, #编号
+	title varchar(32),
+	img_url varchar(128),
+	t varchar(32)
+);
+
+insert into xy_recentNews_preferential values
+(null,"3ds Max效果图25元封顶","http://127.0.0.1:3000/img/index/recent_news/f098025109286903f34d582f38d3cb18.jpg","2019/4/09"),
+(null,"新用户注册赠送调整公告(2019)","http://127.0.0.1:3000/img/index/recent_news/c7504d5507bd8fdb0e4d58ab8964cc47.jpg","2019/4/09"),
+(null,"效果图立减5元","http://127.0.0.1:3000/img/index/recent_news/be5c3d9470a85137a53a04c18fb3aac0.jpg","2019/4/09"),
+(null,"SketchUp效果图25元封顶","http://127.0.0.1:3000/img/index/recent_news/a3dca0690b76a9f3be4e700a2b698e95.jpg","2019/4/09"),
+(null,"推荐新用户，推荐一名奖励20元","http://127.0.0.1:3000/img/index/recent_news/dca5af39e4f66a66f955e77a52af5611.jpg","2019/4/02"),
+(null,"动画渲染部分5折","http://127.0.0.1:3000/img/index/recent_news/c5192c768e7c80df54c73755b3e6fc36.jpg","2019/4/02"),
+(null,"2019新年特惠活动","http://127.0.0.1:3000/img/index/recent_news/bff8a6959367e29509694ff7404a9998.jpg","2019/4/02"),
+(null,"2018炫云决战双十二活动","http://127.0.0.1:3000/img/index/recent_news/8c15d4cfd87f81f413220cbe10365877.jpg","2019/2/19");
 
 #5.首页商品栏目表_VIP （xy_index_product_vip）
 create table xy_index_product_vip(

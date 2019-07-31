@@ -156,6 +156,9 @@ nav li,
   list-style: none;
   box-sizing: border-box;
 }
+nav li{
+  width: 125px;
+}
 nav > ul:first-child {
   width: 1400px;
   height: 70px;

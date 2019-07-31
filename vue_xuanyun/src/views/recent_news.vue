@@ -4,29 +4,17 @@
     <div>
       <img class="bg_img" src="http://127.0.0.1:3000/img/index/news_banner-ni.jpg" alt />
       <div class="index_wrap">
-        <ul>
-          <li>
-            <a href="#">特惠专区</a>
-          </li>
-          <li>
-            <a href="#">最新活动</a>
-          </li>
-          <li>
-            <a href="#">新品发布</a>
-          </li>
-          <li>
-            <a href="#">大赛</a>
-          </li>
-          <li>
-            <a href="#">行业新闻</a>
-          </li>
-          <li>
-            <a href="#">技术文章</a>
-          </li>
+        <ul @click="onnavItem" class="nav_item">
+          <li class="active" data-number=1>特惠专区</li>
+          <li data-number=2>最新活动</li>
+          <li>新品发布</li>
+          <li>大赛</li>
+          <li>行业新闻</li>
+          <li>技术文章</li>
         </ul>
       </div>
     </div>
-    <div class="index_img_wrap">
+    <div class="index_img_wrap" v-if="number==1">
       <!--1-->
       <div>
         <div>
@@ -179,21 +167,34 @@
           </div>
         </div>
       </div>
+      <div class="paging_btn">
+        <a href="#">上一页</a>
+        <span class="paging_btn_span1">1</span>
+        <span>/</span>
+        <span>2</span>
+        <a href="recent_news2.html">下一页</a>
+      </div>
     </div>
-    <div class="paging_btn">
-      <a href="#">上一页</a>
-      <span class="paging_btn_span1">1</span>
-      <span>/</span>
-      <span>2</span>
-      <a href="recent_news2.html">下一页</a>
-    </div>
+    <div v-if="number==2">2</div>
     <Footers></Footers>
   </div>
 </template>
 <script>
 export default {
   data() {
-    return {};
+    return {
+      number:1
+    };
+  },
+  methods: {
+    onnavItem(e) {
+      var nav_item = document.getElementsByClassName("nav_item")[0].children;
+      for (var item of nav_item) {
+        item.classList.remove("active");
+      }
+      e.target.classList.add("active");
+      this.number=e.target.dataset.number
+    }
   }
 };
 </script>
@@ -231,7 +232,10 @@ ul {
 .index_wrap > ul li:hover {
   background-color: #fd7e14;
 }
-.index_img_wrap::after{
+.index_img_wrap {
+  margin: 50px 0;
+}
+.index_img_wrap::after {
   content: "";
   display: block;
   clear: both;
@@ -280,7 +284,7 @@ ul {
   color: #8c8c8c;
 }
 .card_text_wrap > div {
-  display: inline-block;
+  float: right;
   position: relative;
 }
 .card_text_wrap > div > span {
@@ -291,11 +295,7 @@ ul {
   color: #fff;
 }
 .paging_btn {
-  float: right;
-  width: 100%;
   text-align: right;
-  margin-top: 20px;
-  margin-right: 190px;
 }
 .paging_btn a {
   display: inline-block;
@@ -320,6 +320,9 @@ ul {
 .paging_btn > span {
   font-size: 16px;
   color: #888888;
+}
+.active {
+  background-color: #fba02f;
 }
 </style>
 

@@ -10,6 +10,9 @@ body{
   background-color: #f5f5f5;
   padding-inline-start: 0;
 }
+ul{
+      padding-inline-start:0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
