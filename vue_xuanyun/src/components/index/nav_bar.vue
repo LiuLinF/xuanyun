@@ -3,39 +3,39 @@
     <nav>
       <ul>
         <li>
-          <a href="#">
+          <router-link to="/productlist">
             <span>
               <img src="http://127.0.0.1:3000/img/index/vip_item_banner_logo.png" alt />
             </span>
             VIP模板
-          </a>
+          </router-link>
         </li>
         <li>
-          <a href="#">
+          <router-link to="/productlist">
             <span>
               <img src="http://127.0.0.1:3000/img/index/vip_item_banner_logo.png" alt />
             </span>
-            VIP模板
-          </a>
+            免费模板
+          </router-link>
         </li>
         <li v-for="(item,i) of family" :key="i">
-          <router-link to="#">{{item.template_type}}</router-link>
+          <router-link to="/productlist">{{item.template_type}}</router-link>
         </li>
         <li>
-          <a href="#">
+          <router-link to="/productlist">
             <span>
               <img src="http://127.0.0.1:3000/img/index/vip_item_banner_logo.png" alt />
             </span>
-            VIP模板
-          </a>
+            模板之星
+          </router-link>
         </li>
         <li>
-          <a href="#">
+          <router-link to="/productlist">
             <span>
               <img src="http://127.0.0.1:3000/img/index/vip_item_banner_logo.png" alt />
             </span>
-            VIP模板
-          </a>
+            VIP会员
+          </router-link>
         </li>
       </ul>
       <hr style="margin: 0" />
@@ -49,31 +49,31 @@
     <div class="index_product">
       <ul>
         <li>
-          <a href="#">VIP模型</a>
+          <router-link to="">VIP模型</router-link>
         </li>
         <li>
-          <a href="#">VIP模型</a>
+          <router-link to="">VIP模型</router-link>
         </li>
         <li>
-          <a href="#">VIP模型</a>
+          <router-link to="">VIP模型</router-link>
         </li>
         <li>
-          <a href="#">VIP模型</a>
+          <router-link to="">VIP模型</router-link>
         </li>
         <li>
-          <a href="#">VIP模型</a>
+          <router-link to="">VIP模型</router-link>
         </li>
         <li>
-          <a href="#">VIP模型</a>
+          <router-link to="">VIP模型</router-link>
         </li>
         <li>
-          <a href="#">VIP模型</a>
+          <router-link to="">VIP模型</router-link>
         </li>
         <li>
-          <a href="#">VIP模型</a>
+          <router-link to="">VIP模型</router-link>
         </li>
         <li>
-          <a href="#">更多&gt;&gt;</a>
+          <router-link to="">更多&gt;&gt;</router-link>
         </li>
       </ul>
       <!-- 面板1 -->

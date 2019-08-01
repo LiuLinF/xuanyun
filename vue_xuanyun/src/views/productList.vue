@@ -8,7 +8,7 @@
         <div class="headerList">
           <div class="selectTitile">当前条件：</div>
           <div class="selectedContent">
-            <span>全部模型</span>
+            <span>{{atTemplate}}</span>
             <span>
               共
               <span>22503</span>
@@ -28,31 +28,33 @@
           <div class="selectFilter">
             <div class="selectTitile">模型大类：</div>
             <ul>
-              <li v-for="(item,i) of family" :key="i" @click="onfamily">{{item.template_type}}</li>
+              <li
+                v-for="(item,i) of family"
+                :key="i"
+                :data-id="item.fid"
+                @click="onfamily"
+              >{{item.template_type}}</li>
             </ul>
           </div>
           <!-- 2 模型小类 -->
           <div class="selectFilter">
             <div class="selectTitile">模型小类：</div>
             <ul>
-              <li>家装别墅</li>
-              <li>家装别墅</li>
+              <li v-for="(item,i) of xiaofamily" :key="i">{{item.template_type}}</li>
             </ul>
           </div>
           <!-- 3 模型风格 -->
           <div class="selectFilter">
             <div class="selectTitile">模型风格：</div>
             <ul>
-              <li>家装别墅</li>
-              <li>家装别墅</li>
+              <li v-for="(item,i) of styles" :key="i">{{item.template_title}}</li>
             </ul>
           </div>
           <!-- 4 软件版本 -->
           <div class="selectFilter">
             <div class="selectTitile">软件版本：</div>
             <ul>
-              <li>家装别墅</li>
-              <li>家装别墅</li>
+               <li v-for="(item,i) of edition" :key="i">{{item.template_title}}</li>
             </ul>
           </div>
         </div>
@@ -62,10 +64,10 @@
             <input type="checkbox" />VIP
           </span>
           <span>
-            <input type="checkbox" />VIP
+            <input type="checkbox" />免费
           </span>
           <span>
-            <input type="checkbox" />VIP
+            <input type="checkbox" />收费
           </span>
           <span class="icheckUpSpan">独家</span>
           <span class="icheckUpSpan">全景</span>
@@ -81,24 +83,34 @@
 export default {
   data() {
     return {
-      family:""
+      family: "",
+      xiaofamily: "",
+      atTemplate: "全部模型",
+      styles:"",
+      edition:""
     };
   },
-  created(){
-    this.axios.get("/productlist/family").then(result=>{
-      this.family=result.data
-      console.log(this.family)
+  created() {
+    this.axios.get("/productlist/family").then(result => {
+      this.family = result.data;
     });
+    this.axios.get("/productlist/xiaofamily").then(result => {
+      this.xiaofamily = result.data;
+    });
+    this.axios.get("/productlist/style").then(result=>{
+      this.styles=result.data;
+    })
+    this.axios.get("/productlist/edition").then(result=>{
+      this.edition=result.data;
+    })
   },
-  methods:{
-    onfamily() {
-      var fid=this.family[0].fid;
-      console.log(this.family.fid)
+  methods: {
+    onfamily(e) {
+      var fid = e.target.dataset.id;
+      this.atTemplate=e.target.innerHTML
       this.axios.get("/productlist/xiaofamily",{params:{fid:fid}}).then(result=>{
-        // var obj=JSON.parse(result.data)
-      this.family=result.data
-      console.log(this.family)
-    });
+        this.xiaofamily = result.data;
+      });
     }
   }
 };
@@ -125,6 +137,11 @@ ul {
 }
 .selectedContent > span {
   margin: 0 15px;
+}
+.selectedContent > span:first-child {
+  border: 1px dashed #f00;
+  padding: 5px;
+  font-size: 14px;
 }
 .selectInput {
   float: right;
@@ -197,16 +214,16 @@ ul {
   text-align: center;
   padding: 15px 0 15px 15px;
 }
-.moreCondition > span:last-child{
-    float: right;
+.moreCondition > span:last-child {
+  float: right;
 }
-.moreCondition>.icheckUpSpan{
-    border: 1px solid #e6e2e1;
-    border-radius: 5px;
-    background-color: #fff;
-    box-sizing: border-box;
-    font-size: 14px;
-    padding:5px 0;
-    margin:0 3px;
+.moreCondition > .icheckUpSpan {
+  border: 1px solid #e6e2e1;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 0 3px;
 }
 </style>

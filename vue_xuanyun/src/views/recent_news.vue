@@ -1,8 +1,7 @@
 <template>
   <div>
-    <Headers></Headers>
     <div>
-      <img class="bg_img" src="http://127.0.0.1:3000/img/index/news_banner-ni.jpg" alt />
+      <img class="bg_img" src="http://127.0.0.1:3000/img/recent_news/news_banner-ni.jpg" alt />
       <div class="index_wrap">
         <ul @click="onnavItem" class="nav_item">
           <li class="active" data-number=1>特惠专区</li>
@@ -20,7 +19,7 @@
         <div>
           <a href="#">
             <img
-              src="http://127.0.0.1:3000/img/index/recent_news/f098025109286903f34d582f38d3cb18.jpg"
+              src="http://127.0.0.1:3000/img/recent_news/f098025109286903f34d582f38d3cb18.jpg"
               alt
             />
           </a>
@@ -28,7 +27,7 @@
             <a href="#">3ds Max效果图25元封顶</a>
             <p>2019/4/09</p>
             <div>
-              <img src="http://127.0.0.1:3000/img/index/recent_news/card_tip-ni.png" alt />
+              <img src="http://127.0.0.1:3000/img/recent_news/card_tip-ni.png" alt />
               <span>优惠活动</span>
             </div>
           </div>
@@ -39,7 +38,7 @@
         <div>
           <a href="#">
             <img
-              src="http://127.0.0.1:3000/img/index/recent_news/c7504d5507bd8fdb0e4d58ab8964cc47.jpg"
+              src="http://127.0.0.1:3000/img/recent_news/c7504d5507bd8fdb0e4d58ab8964cc47.jpg"
               alt
             />
           </a>
@@ -47,7 +46,7 @@
             <a href="#">新用户注册赠送调整公告(2019)</a>
             <p>2019/4/09</p>
             <div>
-              <img src="http://127.0.0.1:3000/img/index/recent_news/card_tip-ni.png" alt />
+              <img src="http://127.0.0.1:3000/img/recent_news/card_tip-ni.png" alt />
               <span>优惠活动</span>
             </div>
           </div>
@@ -58,7 +57,7 @@
         <div>
           <a href="#">
             <img
-              src="http://127.0.0.1:3000/img/index/recent_news/be5c3d9470a85137a53a04c18fb3aac0.jpg"
+              src="http://127.0.0.1:3000/img/recent_news/be5c3d9470a85137a53a04c18fb3aac0.jpg"
               alt
             />
           </a>
@@ -66,7 +65,7 @@
             <a href="#">效果图立减5元</a>
             <p>2019/4/09</p>
             <div>
-              <img src="http://127.0.0.1:3000/img/index/recent_news/card_tip-ni.png" alt />
+              <img src="http://127.0.0.1:3000/img/recent_news/card_tip-ni.png" alt />
               <span>优惠活动</span>
             </div>
           </div>
@@ -77,7 +76,7 @@
         <div>
           <a href="#">
             <img
-              src="http://127.0.0.1:3000/img/index/recent_news/a3dca0690b76a9f3be4e700a2b698e95.jpg"
+              src="http://127.0.0.1:3000/img/recent_news/a3dca0690b76a9f3be4e700a2b698e95.jpg"
               alt
             />
           </a>
@@ -85,7 +84,7 @@
             <a href="#">SketchUp效果图25元封顶</a>
             <p>2019/4/09</p>
             <div>
-              <img src="http://127.0.0.1:3000/img/index/recent_news/card_tip-ni.png" alt />
+              <img src="http://127.0.0.1:3000/img/recent_news/card_tip-ni.png" alt />
               <span>优惠活动</span>
             </div>
           </div>
@@ -96,7 +95,7 @@
         <div>
           <a href="#">
             <img
-              src="http://127.0.0.1:3000/img/index/recent_news/dca5af39e4f66a66f955e77a52af5611.jpg"
+              src="http://127.0.0.1:3000/img/recent_news/dca5af39e4f66a66f955e77a52af5611.jpg"
               alt
             />
           </a>
@@ -104,7 +103,7 @@
             <a href="#">推荐新用户，推荐一名奖励20元</a>
             <p>2019/4/09</p>
             <div>
-              <img src="http://127.0.0.1:3000/img/index/recent_news/card_tip-ni.png" alt />
+              <img src="http://127.0.0.1:3000/img/recent_news/card_tip-ni.png" alt />
               <span>优惠活动</span>
             </div>
           </div>
@@ -115,7 +114,7 @@
         <div>
           <a href="#">
             <img
-              src="http://127.0.0.1:3000/img/index/recent_news/c5192c768e7c80df54c73755b3e6fc36.jpg"
+              src="http://127.0.0.1:3000/img/recent_news/c5192c768e7c80df54c73755b3e6fc36.jpg"
               alt
             />
           </a>
@@ -123,7 +122,7 @@
             <a href="#">动画渲染部分5折</a>
             <p>2019/4/09</p>
             <div>
-              <img src="http://127.0.0.1:3000/img/index/recent_news/card_tip-ni.png" alt />
+              <img src="http://127.0.0.1:3000/img/recent_news/card_tip-ni.png" alt />
               <span>优惠活动</span>
             </div>
           </div>
@@ -134,7 +133,7 @@
         <div>
           <a href="#">
             <img
-              src="http://127.0.0.1:3000/img/index/recent_news/bff8a6959367e29509694ff7404a9998.jpg"
+              src="http://127.0.0.1:3000/img/recent_news/bff8a6959367e29509694ff7404a9998.jpg"
               alt
             />
           </a>
@@ -142,7 +141,7 @@
             <a href="#">2019新年特惠活动</a>
             <p>2019/4/09</p>
             <div>
-              <img src="http://127.0.0.1:3000/img/index/recent_news/card_tip-ni.png" alt />
+              <img src="http://127.0.0.1:3000/img/recent_news/card_tip-ni.png" alt />
               <span>优惠活动</span>
             </div>
           </div>
@@ -153,7 +152,7 @@
         <div>
           <a href="#">
             <img
-              src="http://127.0.0.1:3000/img/index/recent_news/8c15d4cfd87f81f413220cbe10365877.jpg"
+              src="http://127.0.0.1:3000/img/recent_news/8c15d4cfd87f81f413220cbe10365877.jpg"
               alt
             />
           </a>
@@ -161,7 +160,7 @@
             <a href="#">2018炫云决战双十二活动</a>
             <p>2019/4/09</p>
             <div>
-              <img src="http://127.0.0.1:3000/img/index/recent_news/card_tip-ni.png" alt />
+              <img src="http://127.0.0.1:3000/img/recent_news/card_tip-ni.png" alt />
               <span>优惠活动</span>
             </div>
           </div>
@@ -176,7 +175,6 @@
       </div>
     </div>
     <div v-if="number==2">2</div>
-    <Footers></Footers>
   </div>
 </template>
 <script>

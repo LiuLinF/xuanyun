@@ -1,7 +1,5 @@
 <template>
   <div>
-    <!--头部-->
-    <Headers></Headers>
     <!--轮播图-->
     <div class="container-fulln w-100">
       <div id="demo" class="carousel" data-ride="carousel">
@@ -510,8 +508,6 @@
         </div>
       </div>
     </div>
-    <!--底部-->
-    <Footers></Footers>
   </div>
 </template>
 <script>

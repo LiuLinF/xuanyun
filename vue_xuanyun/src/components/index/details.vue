@@ -65,6 +65,20 @@
               <img src="http://127.0.0.1:3000/img/details/cnhk_bg4.jpg">
           </div>
       </div>
+      <!-- 模板使用说明 -->
+      <div class="model_des_text">
+          <div>
+              <p>模型使用说明：</p>
+              <p>1.本站模型可能添加了版权声明，如果打开时弹出版权声明窗口，则需要安装炫云客户端的并且登陆过一次后才能正确打开及使用。</p>
+              <p>2.本站新模型提供了有灯光和无灯光版本，没有安装炫云客户端或者要使用企业内部自建渲染集群时，建议下载无灯光版本，否则可能渲染失败。</p>
+              <p>3. 本站所有模型，都公示了版权归属及原作者信息，如果发现作品被盗用的可以联系我们核实。</p>
+              <p>4.本站用户只拥有模型的使用权，未经本站授权，会员不得以任何形式发布、传播、复制、转售该模型。如果因上述行为给本站造成损害，本站将依法追究其相关法律责任。</p>
+              <p>5. 本站免费模型供所有注册用户免费下载，也不收取流量费。</p>
+              <p>6.本站VIP模型仅供VIP用户才能下载，购买VIP请登陆用户中心按照提示购买，或者留意市场活动以获得免费兑换码。</p>
+              <p>7.本站付费模型需使用炫豆支付下载，购买炫豆请登陆用户中心充值，或者留意市场活动免费获取。付费模型在第一次购买后72小时以外重复下载，每次收取流量费0.6炫豆。</p>
+              <p>8. 本站模型禁止恶意下载，如果出现“下载过于频繁”提示，请等待3分钟后再下载。</p>
+          </div>
+      </div>
     </div>
   </div>
 </template>
@@ -77,7 +91,8 @@ export default {
 </script>
 <style scoped>
 .msgContent>div,
-.opusImgWrap>div{
+.opusImgWrap>div,
+.model_des_text>div{
   width: 1500px;
   margin: 0 auto;
   background-color: #fff;
@@ -86,6 +101,8 @@ export default {
 }
 .opusImgWrap>div{
     text-align: center;
+    border:none;
+    padding:25px 0;
 }
 .leftPart{
     display: inline-block;
@@ -169,5 +186,21 @@ export default {
 .opusImgWrap>div>img{
     width: 1200px;
     margin-top: 25px;
+}
+.opusImgWrap>div>img:first-child{
+    margin:0;
+}
+.model_des_text>div>p{
+    letter-spacing: 4px;
+    color:#bbb;
+    font-size: 15px;
+    margin-left:30px;
+}
+.model_des_text>div>p:first-child{
+    font-family: "Microsoft YaHei", "微软雅黑";
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 30px;
 }
 </style>

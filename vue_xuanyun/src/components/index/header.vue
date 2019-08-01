@@ -97,6 +97,7 @@ ul{
 }
 .container-fulls > div {
   width: 1500px;
+  height: 65px;
   margin: 0 auto;
   position: relative;
 }

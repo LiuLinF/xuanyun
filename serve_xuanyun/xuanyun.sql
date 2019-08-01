@@ -23,7 +23,7 @@ insert into xy_user values
 	(null,"蒙流纯牛奶","123456","123456@qq.com",12345677890,"狗蛋");
 
 #3.商品详情图表 （xy_template_pic）
-create table xy_template_pic(
+create table xy_details(
 	pid int primary key auto_increment,  #编号
 	template_title varchar(32),  #模板标题
 	product_id varchar(32) unique,  #商品ID 唯一 
@@ -76,7 +76,7 @@ insert into xy_template_family values
 	(null,"室外建筑");
 #模板小类别表(xy_template_xiaofamily)
 create table xy_template_xiaofamily(
-	id int primary key auto_increment,  #编号
+	xid int primary key auto_increment,  #编号
 	template_type varchar(32),  #模板类型
 	fid int
 );
@@ -171,7 +171,7 @@ insert into xy_template_xiaofamily values
 
 #模板风格表（xy_template_style）
 create table xy_template_style(
-	id int primary key auto_increment, #编号
+	sid int primary key auto_increment, #编号
 	template_title varchar(32)  #模板类型
 );
 
@@ -184,7 +184,6 @@ insert into xy_template_style values
 (null,"美式"),
 (null,"日式"),
 (null,"中式"),
-(null,"地中海"),
 (null,"混搭"),
 (null,"东南亚"),
 (null,"港式"),
@@ -192,6 +191,29 @@ insert into xy_template_style values
 (null,"法式"),
 (null,"新中式");
 
+create table xy_template_edition(
+	eid int primary key auto_increment, #编号
+	template_title varchar(32)  #模板类型
+);
+
+insert into xy_template_edition values
+(null,"MAX2009"),
+(null,"MAX2010"),
+(null,"MAX2011"),
+(null,"MAX2012"),
+(null,"MAX2013"),
+(null,"MAX2014"),
+(null,"MAX2015"),
+(null,"MAX2016"),
+(null,"MAX2017"),
+(null,"MAX2017"),
+(null,"SketchUp2012"),
+(null,"SketchUp2014"),
+(null,"SketchUp2015"),
+(null,"SketchUp2016"),
+(null,"SketchUp2017"),
+(null,"SketchUp2018"),
+(null,"SketchUp8.0");
 
 create table xy_recentNews_preferential(
 	id int primary key auto_increment, #编号

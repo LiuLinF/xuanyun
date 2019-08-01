@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Headers></Headers>
     <!--全景图-->
     <div class="panorama_bg">
         <div>
@@ -55,7 +54,6 @@
         <img style="width: 100%" src="http://127.0.0.1:3000/img/panorama/adver_index.png" alt=""/>
         <p>更多服务待推出，有任何建议或需求，可以联系客服或加以下QQ群进行咨询。</p>
     </div>
-    <Footers></Footers>
     </div>
 </template>
 <script>
