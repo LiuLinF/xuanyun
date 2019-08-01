@@ -7,6 +7,7 @@ import recent_news from './views/recent_news.vue'
 import cloud_rendering from './views/cloud_rendering.vue'
 import panorama from './views/panorama.vue'
 import productList from './views/productList.vue'
+import cloud_classroom from './views/cloud_classroom.vue'
 import details from './components/index/details.vue'
 
 
@@ -21,6 +22,7 @@ export default new Router({
     {path:"/cloud_rendering",component:cloud_rendering},
     {path:"/panorama",component:panorama},
     {path:"/productlist",component:productList},
+    {path:"/cloud_classroom",component:cloud_classroom},
     {path:"/details",component:details},
   ]
 })

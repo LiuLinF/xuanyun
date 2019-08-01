@@ -8,37 +8,37 @@
           <!-- 第一张-->
           <div class="carousel-item w-100 active">
             <a href="#">
-              <img class="w-100" src="http://127.0.0.1:3000/img/index/bg1.jpg" alt />
+              <img class="w-100" src="http://127.0.0.1:3000/img/cloud_rendering/bg1.jpg" alt />
             </a>
           </div>
           <!-- 第二张-->
           <div class="carousel-item w-100">
             <a href="#">
-              <img class="w-100" src="http://127.0.0.1:3000/img/index/bg2.jpg" alt />
+              <img class="w-100" src="http://127.0.0.1:3000/img/cloud_rendering/bg2.jpg" alt />
             </a>
           </div>
           <!-- 第三张-->
           <div class="carousel-item w-100">
             <a href="#">
-              <img class="w-100" src="http://127.0.0.1:3000/img/index/bg3.jpg" alt />
+              <img class="w-100" src="http://127.0.0.1:3000/img/cloud_rendering/bg3.jpg" alt />
             </a>
           </div>
           <!-- 第四张-->
           <div class="carousel-item w-100">
             <a href="#">
-              <img class="w-100" src="http://127.0.0.1:3000/img/index/bg4.jpg" alt />
+              <img class="w-100" src="http://127.0.0.1:3000/img/cloud_rendering/bg4.jpg" alt />
             </a>
           </div>
           <!-- 第五张-->
           <div class="carousel-item w-100">
             <a href="#">
-              <img class="w-100" src="http://127.0.0.1:3000/img/index/bg5.jpg" alt />
+              <img class="w-100" src="http://127.0.0.1:3000/img/cloud_rendering/bg5.jpg" alt />
             </a>
           </div>
           <!-- 第六张-->
           <div class="carousel-item w-100">
             <a href="#">
-              <img class="w-100" src="http://127.0.0.1:3000/img/index/bg6.jpg" alt />
+              <img class="w-100" src="http://127.0.0.1:3000/img/cloud_rendering/bg6.jpg" alt />
             </a>
           </div>
         </div>
@@ -57,7 +57,7 @@
       <p>极速渲染</p>
       <p>速度超出想象 想快就快</p>
       <div>
-        <img src="http://127.0.0.1:3000/img/index/rapid_render-ni.png" alt />
+        <img src="http://127.0.0.1:3000/img/cloud_rendering/rapid_render-ni.png" alt />
       </div>
     </div>
     <!--简单易用-->
@@ -65,7 +65,7 @@
       <p>简单易用</p>
       <p>想不到的简单 即装即用</p>
       <div>
-        <img src="http://127.0.0.1:3000/img/index/easy_use-ni.png" alt />
+        <img src="http://127.0.0.1:3000/img/cloud_rendering/easy_use-ni.png" alt />
       </div>
       <a class="index_btn" href="#">了解更多</a>
     </div>
@@ -76,7 +76,7 @@
         <!--1-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/3dmax_logo-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/3dmax_logo-ni.png" alt />
           </div>
           <div>
             <p>3dsmax</p>
@@ -86,7 +86,7 @@
         <!--2-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/maya_logo-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/maya_logo-ni.png" alt />
           </div>
           <div>
             <p>Maya</p>
@@ -96,7 +96,7 @@
         <!--3-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/scktch-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/scktch-ni.png" alt />
           </div>
           <div>
             <p>SketchUp</p>
@@ -106,7 +106,7 @@
         <!--4-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/cimaya-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/cimaya-ni.png" alt />
           </div>
           <div>
             <p>Cinema4D</p>
@@ -116,7 +116,7 @@
         <!--5-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/rhino-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/rhino-ni.png" alt />
           </div>
           <div>
             <p>Rhino 5</p>
@@ -126,7 +126,7 @@
         <!--6-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/blender-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/blender-ni.png" alt />
           </div>
           <div>
             <p>Blender 2.x</p>
@@ -136,7 +136,7 @@
         <!--7-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/v-ray-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/v-ray-ni.png" alt />
           </div>
           <div>
             <p>VRay</p>
@@ -145,7 +145,7 @@
         <!--8-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/corono-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/corono-ni.png" alt />
           </div>
           <div>
             <p>Corona</p>
@@ -154,7 +154,7 @@
         <!--9-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/solid-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/solid-ni.png" alt />
           </div>
           <div>
             <p>Arnold</p>
@@ -163,7 +163,7 @@
         <!--10-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/redshift-ni.png" alt />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/redshift-ni.png" alt />
           </div>
           <div>
             <p>Redshift</p>
@@ -172,7 +172,7 @@
         <!--11-->
         <div>
           <div>
-            <img src="http://127.0.0.1:3000/img/index/keyshot-ni.png" alt style="width:80px;" />
+            <img src="http://127.0.0.1:3000/img/cloud_rendering/keyshot-ni.png" alt style="width:80px;" />
           </div>
           <div>
             <p>keyshot</p>
@@ -185,7 +185,7 @@
       <p>实惠价格</p>
       <p>人人都用得起的云渲染</p>
       <div>
-        <img src="http://127.0.0.1:3000/img/index/con_for_bg_al_content-ni.png" alt />
+        <img src="http://127.0.0.1:3000/img/cloud_rendering/con_for_bg_al_content-ni.png" alt />
       </div>
       <a class="index_btn" href="#">了解更多</a>
     </div>
@@ -195,7 +195,7 @@
       <div>
         <!--1-->
         <div>
-          <img style="padding-top:70px;" src="http://127.0.0.1:3000/img/index/one-ni.png" alt />
+          <img style="padding-top:70px;" src="http://127.0.0.1:3000/img/cloud_rendering/one-ni.png" alt />
           <div style="margin-top:40px;position: relative;">
             <p>交付更快</p>
             <p>客户更满意</p>
@@ -204,7 +204,7 @@
         </div>
         <!--2-->
         <div>
-          <img style="padding-top:70px;" src="http://127.0.0.1:3000/img/index/two-ni.png" alt />
+          <img style="padding-top:70px;" src="http://127.0.0.1:3000/img/cloud_rendering/two-ni.png" alt />
           <div style="margin-top:40px;position: relative;">
             <p>交付更多</p>
             <p>解放电脑继续工作</p>
@@ -213,7 +213,7 @@
         </div>
         <!--3-->
         <div>
-          <img style="padding-top:70px;" src="http://127.0.0.1:3000/img/index/three-ni.png" alt />
+          <img style="padding-top:70px;" src="http://127.0.0.1:3000/img/cloud_rendering/three-ni.png" alt />
           <div style="margin-top:40px;position: relative;">
             <p>省心省力</p>
             <p>无需熬夜赶图</p>
@@ -222,7 +222,7 @@
         </div>
         <!--4-->
         <div>
-          <img style="padding-top:70px;" src="http://127.0.0.1:3000/img/index/four-ni.png" alt />
+          <img style="padding-top:70px;" src="http://127.0.0.1:3000/img/cloud_rendering/four-ni.png" alt />
           <div style="margin-top:40px;position: relative;">
             <p>省资源</p>
             <p>电脑寿命更长</p>
@@ -235,7 +235,7 @@
     <div class="free_trial">
       <p>免费体验</p>
       <div>
-        <img src="http://127.0.0.1:3000/img/index/free_expre_content30-ni.png" alt />
+        <img src="http://127.0.0.1:3000/img/cloud_rendering/free_expre_content30-ni.png" alt />
       </div>
       <a class="index_btn" href="#">了解更多</a>
     </div>
@@ -270,7 +270,7 @@ export default {
 .index_harvest,
 .free_trial{
 	width:100%;
-	background-image: url('http://127.0.0.1:3000/img/index/shine_index_fir_con_line-ni.png');
+	background-image: url('http://127.0.0.1:3000/img/cloud_rendering/shine_index_fir_con_line-ni.png');
 	background-size: 100% 100%;
 	padding:80px 0 50px;
 	text-align: center;
@@ -296,7 +296,7 @@ export default {
 	text-align:center;
 }
 .simpleness{
-	background-image: url('http://127.0.0.1:3000/img/index/shine_index_sec_con-ni.png');
+	background-image: url('http://127.0.0.1:3000/img/cloud_rendering/shine_index_sec_con-ni.png');
 }
 .index_btn{
 	display:inline-block;
@@ -347,7 +347,7 @@ export default {
 	color: #101010;
 }
 .affordable_price{
-	background: url("http://127.0.0.1:3000/img/index/con_for_bg_al-ni.png") no-repeat;
+	background: url("http://127.0.0.1:3000/img/cloud_rendering/con_for_bg_al-ni.png") no-repeat;
 	background-size: 100% 100%;
 }
 .affordable_price>p{
@@ -395,22 +395,22 @@ export default {
 	left:65%;
 	width:51px;
 	height: 51px;
-	background-image: url(http://127.0.0.1:3000/img/index/fast_sub_de-ni.png);
+	background-image: url(http://127.0.0.1:3000/img/cloud_rendering/fast_sub_de-ni.png);
 }
 .index_harvest>div>div:nth-child(2) span{
-	background-image: url(http://127.0.0.1:3000/img/index/more_two-ni.png);
+	background-image: url(http://127.0.0.1:3000/img/cloud_rendering/more_two-ni.png);
 }
 .index_harvest>div>div:nth-child(3) span{
-	background-image: url(http://127.0.0.1:3000/img/index/free_for_worry-ni.png);
+	background-image: url(http://127.0.0.1:3000/img/cloud_rendering/free_for_worry-ni.png);
 }
 .index_harvest>div>div:last-child span{
-	background-image: url(http://127.0.0.1:3000/img/index/free_for_resource-ni.png);
+	background-image: url(http://127.0.0.1:3000/img/cloud_rendering/free_for_resource-ni.png);
 }
 .index_harvest>div>div:hover p,.index_harvest>div>div:hover span{
 	color:#fff;
 }
 .free_trial{
-	background-image: url(http://127.0.0.1:3000/img/index/free_exprece_bg-ni.png);
+	background-image: url(http://127.0.0.1:3000/img/cloud_rendering/free_exprece_bg-ni.png);
 }
 </style>
 

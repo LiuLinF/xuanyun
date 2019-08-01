@@ -28,8 +28,7 @@
           <div class="selectFilter">
             <div class="selectTitile">模型大类：</div>
             <ul>
-              <li>家装别墅</li>
-              <li>家装别墅</li>
+              <li v-for="(item,i) of family" :key="i" @click="onfamily">{{item.template_type}}</li>
             </ul>
           </div>
           <!-- 2 模型小类 -->
@@ -81,7 +80,26 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      family:""
+    };
+  },
+  created(){
+    this.axios.get("/productlist/family").then(result=>{
+      this.family=result.data
+      console.log(this.family)
+    });
+  },
+  methods:{
+    onfamily() {
+      var fid=this.family[0].fid;
+      console.log(this.family.fid)
+      this.axios.get("/productlist/xiaofamily",{params:{fid:fid}}).then(result=>{
+        // var obj=JSON.parse(result.data)
+      this.family=result.data
+      console.log(this.family)
+    });
+    }
   }
 };
 </script>
