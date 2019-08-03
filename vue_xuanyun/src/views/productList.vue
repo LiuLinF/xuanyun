@@ -3,12 +3,12 @@
     <!-- 筛选最外层div -->
     <div>
       <!-- 内层 -->
-      <div class="productlist">
+      <div class="productlists">
         <!-- 头部：当前条件 -->
         <div class="headerList">
           <div class="selectTitile">当前条件：</div>
           <div class="selectedContent">
-            <span>{{atTemplate}}</span>
+            <span>{{this.$store.state.atTemplate}}</span>
             <span>
               共
               <span>22503</span>
@@ -40,21 +40,21 @@
           <div class="selectFilter">
             <div class="selectTitile">模型小类：</div>
             <ul>
-              <li v-for="(item,i) of xiaofamily" :key="i">{{item.template_type}}</li>
+              <li @click="onstyles" :data-id="item.sid" v-for="(item,i) of xiaofamily" :key="i">{{item.template_type}}</li>
             </ul>
           </div>
           <!-- 3 模型风格 -->
           <div class="selectFilter">
             <div class="selectTitile">模型风格：</div>
             <ul>
-              <li v-for="(item,i) of styles" :key="i">{{item.template_title}}</li>
+              <li :data-id="item.sid" v-for="(item,i) of styles" :key="i">{{item.template_title}}</li>
             </ul>
           </div>
           <!-- 4 软件版本 -->
           <div class="selectFilter">
             <div class="selectTitile">软件版本：</div>
             <ul>
-               <li v-for="(item,i) of edition" :key="i">{{item.template_title}}</li>
+              <li v-for="(item,i) of edition" :key="i">{{item.template_title}}</li>
             </ul>
           </div>
         </div>
@@ -77,6 +77,22 @@
         </div>
       </div>
     </div>
+    <div class="productlist">
+      <ul>
+        <li>
+          <!-- 1 -->
+          <div v-for="(item,i) of content" :key="i">
+            <img :src="item.img_url" alt />
+            <div>
+              <router-link to>
+                <span>{{item.title}}</span>
+              </router-link>
+              <router-link to>{{item.price}}</router-link>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 <script>
@@ -85,9 +101,9 @@ export default {
     return {
       family: "",
       xiaofamily: "",
-      atTemplate: "全部模型",
-      styles:"",
-      edition:""
+      styles: "",
+      edition: "",
+      content: ""
     };
   },
   created() {
@@ -97,20 +113,51 @@ export default {
     this.axios.get("/productlist/xiaofamily").then(result => {
       this.xiaofamily = result.data;
     });
-    this.axios.get("/productlist/style").then(result=>{
-      this.styles=result.data;
-    })
-    this.axios.get("/productlist/edition").then(result=>{
-      this.edition=result.data;
-    })
+    this.axios.get("/productlist/style").then(result => {
+      this.styles = result.data;
+    });
+    this.axios.get("/productlist/edition").then(result => {
+      this.edition = result.data;
+    });
+    if (!this.$route.query.fid) {
+      this.axios.get("/productlist/content", { params: {} }).then(result => {
+        this.content = result.data;
+        console.log(this.content);
+      });
+    } else {
+      var fid = this.$route.query.fid;
+      this.axios
+        .get("/productlist/content", { params: { fid: fid } })
+        .then(result => {
+          this.content = result.data;
+          console.log(this.content);
+        });
+    }
   },
   methods: {
     onfamily(e) {
       var fid = e.target.dataset.id;
-      this.atTemplate=e.target.innerHTML
-      this.axios.get("/productlist/xiaofamily",{params:{fid:fid}}).then(result=>{
-        this.xiaofamily = result.data;
-      });
+      this.$store.state.atTemplate = e.target.innerHTML;
+      this.axios
+        .get("/productlist/xiaofamily", { params: { fid: fid } })
+        .then(result => {
+          this.xiaofamily = result.data;
+        });
+      this.axios
+        .get("/productlist/content", { params: { fid: fid } })
+        .then(result => {
+          this.content = result.data;
+          console.log(this.content);
+        });
+    },
+    onstyles(e) {
+      var sid = e.target.dataset.id;
+      this.axios
+        .get("/productlist/content", { params: { sid: sid } })
+        .then(result => {
+          this.content = result.data;
+          console.log(this.content);
+        });
     }
   }
 };
@@ -123,7 +170,7 @@ ul {
   height: 70px;
   line-height: 70px;
 }
-.productlist {
+.productlists {
   width: 1500px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -225,5 +272,72 @@ ul {
   font-size: 14px;
   padding: 5px 0;
   margin: 0 3px;
+}
+.productlist > ul > li {
+  float: left;
+  list-style: none;
+  box-sizing: border-box;
+}
+.productlist {
+  text-align: center;
+  margin: 50px 0;
+}
+.productlist > ul {
+  width: 1500px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+.productlist > ul > li {
+  float: left;
+  list-style: none;
+  box-sizing: border-box;
+}
+.productlist > ul:first-child a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #4e4e4e;
+  box-sizing: border-box;
+}
+.productlist > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.productlist > ul:first-child > li:first-child a {
+  color: #333;
+  font-size: 18px;
+}
+.productlist > ul:first-child > li:first-child a:hover {
+  color: gray;
+}
+.productlist > ul:last-child > li > div {
+  width: 352px;
+  height: 356px;
+  background-color: #fff;
+  float: left;
+  margin: 30px 10px 0 12px;
+  box-sizing: border-box;
+}
+.productlist > ul:last-child > li > div:hover {
+  box-shadow: 1px 1px 10px -1px gray;
+}
+.productlist > ul:last-child > li > div > div {
+  margin: 25px;
+  text-align: left;
+}
+.productlist > ul:last-child > li > div > div > a span {
+  margin-left: 20px;
+}
+.productlist > ul:last-child > li > div > div > a:last-child {
+  font-size: 18px;
+  color: #ff7f2c;
+  float: right;
+  line-height: 35px;
+}
+.productlist .user_pic {
+  width: 42px;
+  border-radius: 50%;
 }
 </style>

@@ -19,7 +19,7 @@ const pool=require("../pool");
         })
     })
     router.get("/family",(req,res)=>{
-        var sql="select template_type from xy_template_family"
+        var sql="select fid,template_type from xy_template_family"
         pool.query(sql,(err,result)=>{
             if(err) throw err
             res.send(result)

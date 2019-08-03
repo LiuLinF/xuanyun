@@ -19,7 +19,7 @@
           </router-link>
         </li>
         <li v-for="(item,i) of family" :key="i">
-          <router-link to="/productlist">{{item.template_type}}</router-link>
+          <span @click="toProductList($event)" :data-id="item.fid">{{item.template_type}}</span>
         </li>
         <li>
           <router-link to="/productlist">
@@ -131,6 +131,7 @@ export default {
   created() {
     this.axios.get("/index/family").then(result => {
       this.family = result.data;
+      console.log(this.family)
     });
     this.axios.get("/index/productvip").then(result => {
       this.productvip = result.data;
@@ -138,6 +139,15 @@ export default {
     this.axios.get("/index/productvip").then(result=>{
            this.carouselList=result.data;
        })
+       
+  },
+  methods:{
+    toProductList(e){
+      var fid=`/productlist?fid=${e.target.dataset.id}`
+      this.$router.push(fid)
+      this.$store.state.atTemplate=e.target.innerHTML
+      console.log(e.target.dataset.id)
+    }
   }
 };
 </script>

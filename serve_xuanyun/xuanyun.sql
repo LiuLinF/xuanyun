@@ -215,6 +215,38 @@ insert into xy_template_edition values
 (null,"SketchUp2018"),
 (null,"SketchUp8.0");
 
+#创建筛选表(xy_productList)
+create table xy_productList(
+	pid int primary key auto_increment, #编号 
+	title varchar(32),
+	img_url varchar(128),
+	jindou_url varchar(128),
+	price varchar(10),
+	fid int,
+	xid int,
+	sid int,
+	eid int
+);
+
+#插入数据
+insert into xy_productList values
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip1.jpg","","免费",1,1,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip2.jpg","","免费",1,2,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip3.jpg","","免费",1,3,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip4.jpg","","免费",1,4,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip5.jpg","","免费",1,5,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip6.jpg","","免费",1,6,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip7.jpg","","免费",1,7,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip8.jpg","","免费",1,8,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip2.jpg","","免费",2,10,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip3.jpg","","免费",3,11,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip4.jpg","","免费",4,1,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip5.jpg","","免费",5,1,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip6.jpg","","免费",6,1,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip7.jpg","","免费",7,1,1,1),
+(null,"北欧ins风模型","http://127.0.0.1:3000/img/index/product_vip/product_pic/vip8.jpg","","免费",8,1,1,1);
+
+
 create table xy_recentNews_preferential(
 	id int primary key auto_increment, #编号
 	title varchar(32),

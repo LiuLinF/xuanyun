@@ -37,4 +37,18 @@ const pool=require("../pool");
             res.send(result)
         })
     })
+    //多表查询
+    router.get("/content",(req,res)=>{
+        var fid=req.query.fid;
+        console.log(fid)
+        if(!fid){
+            var sql="select * from xy_productList"
+        }else{
+            var sql="select * from xy_productList where fid=?"
+        }
+        pool.query(sql,[fid],(err,result)=>{
+            if(err) throw err
+            res.send(result)
+        })
+    })
 module.exports=router;
